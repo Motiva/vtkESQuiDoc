@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classvtkToolDummy.html" title="Implementation class of a dummy tool." alt="" coords="5,246,117,277"/>
+<area shape="rect" id="node9" href="$classvtkToolGrasper.html" title="Implementation class of a surgical laparoscopic grasper." alt="" coords="141,246,256,277"/>
+<area shape="rect" id="node11" href="$classvtkToolProbe.html" title="Implementation class of a surgical laparoscopic probe." alt="" coords="280,246,381,277"/>
+<area shape="rect" id="node13" href="$classvtkToolScissors.html" title="Implementation class of surgical laparoscopic scissors." alt="" coords="405,246,523,277"/>
+<area shape="rect" id="node2" href="$classvtkTool.html" title="Implementation class for scenario tool definition." alt="" coords="231,86,297,117"/>
+<area shape="rect" id="node4" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object." alt="" coords="199,6,329,37"/>
+</map>
