@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -38,6 +38,7 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -68,6 +69,12 @@ Collaboration diagram for vtkCollisionModel:</div>
 
 <p><a href="classvtkCollisionModel-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModelType</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool type definitiion. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModelStatus</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of model status. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a5889bcf9e2418138cf7351212ca7f8"></a><!-- doxytag: member="vtkCollisionModel::vtkTypeRevisionMacro" ref="a3a5889bcf9e2418138cf7351212ca7f8" args="(vtkCollisionModel, vtkModel)" -->
@@ -122,6 +129,81 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304556afefa207e146ad1eb4c9884372"></a><!-- doxytag: member="vtkCollisionModel::RemoveAllCollisions" ref="a304556afefa207e146ad1eb4c9884372" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionModel.html#a304556afefa207e146ad1eb4c9884372">RemoveAllCollisions</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all collisions from the model. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeac3fb870a4c3f9e196d1be3bc509eea"></a><!-- doxytag: member="vtkCollisionModel::vtkTypeRevisionMacro" ref="aeac3fb870a4c3f9e196d1be3bc509eea" args="(vtkModel, vtkPolyDataAlgorithm)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aeac3fb870a4c3f9e196d1be3bc509eea">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkModel.html">vtkModel</a>, vtkPolyDataAlgorithm)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6d654a42634818a295c4340737bfd28e">SetId</a> (vtkIdType)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model id.  <a href="#a6d654a42634818a295c4340737bfd28e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a7f311b9904a7164a742d468dac19b69f">GetId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model id.  <a href="#a7f311b9904a7164a742d468dac19b69f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a3084d9093ae6c6cfb769d3c5fe654317">SetObjectId</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the object id of the model.  <a href="#a3084d9093ae6c6cfb769d3c5fe654317"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a933d94b0366783a5cf7c6007d9af73e2"></a><!-- doxytag: member="vtkCollisionModel::GetObjectId" ref="a933d94b0366783a5cf7c6007d9af73e2" args="()" -->
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a933d94b0366783a5cf7c6007d9af73e2">GetObjectId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the object id of the model. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a662b5b8eaf63929ece5af9ee6387ae8d">SetModelType</a> (<a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model type.  <a href="#a662b5b8eaf63929ece5af9ee6387ae8d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a71769995a4a3560e6b80ce636587de90">GetModelType</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model type.  <a href="#a71769995a4a3560e6b80ce636587de90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4b4c6445f788d5364abf9bbb87411953">SetStatus</a> (<a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the model state.  <a href="#a4b4c6445f788d5364abf9bbb87411953"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aec03f4aabb12110bacae93892aa983aa">GetStatus</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the model.  <a href="#aec03f4aabb12110bacae93892aa983aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad69b6b1e2cfbb35ef5d7f3dc2528674f">SetName</a> (const char *)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model name.  <a href="#ad69b6b1e2cfbb35ef5d7f3dc2528674f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4c3c94274d40b5e1365955ca16049d6b">GetName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model name.  <a href="#a4c3c94274d40b5e1365955ca16049d6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a9a2ef2c36899bdda11e31eb5d4e24f4d">SetFileName</a> (const char *)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model filename.  <a href="#a9a2ef2c36899bdda11e31eb5d4e24f4d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a8921166549bd7464fc16ef5dab6d39f4">GetFileName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model filename.  <a href="#a8921166549bd7464fc16ef5dab6d39f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44899bfd96db02a3b2464555ca527c58"></a><!-- doxytag: member="vtkCollisionModel::SetColor" ref="a44899bfd96db02a3b2464555ca527c58" args="(double, double, double)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a44899bfd96db02a3b2464555ca527c58">SetColor</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model mesh color. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade17120a7694cc43d8334a2f8b3c08c6"></a><!-- doxytag: member="vtkCollisionModel::GetColor" ref="ade17120a7694cc43d8334a2f8b3c08c6" args="()" -->
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ade17120a7694cc43d8334a2f8b3c08c6">GetColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model mesh color. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a18911f1446e0fa6812dff406a37660db">SetOpacity</a> (double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model opacity.  <a href="#a18911f1446e0fa6812dff406a37660db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a42a2d686d009f500942918ff34b1079d">GetOpacity</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model opacity.  <a href="#a42a2d686d009f500942918ff34b1079d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ab45dc20e53a7ec4a69354fa72555143a">SetVisibility</a> (bool)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model visibility.  <a href="#ab45dc20e53a7ec4a69354fa72555143a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba">GetVisibility</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model visibilty.  <a href="#aa6b6113945209a6c73f9e97f2a27a7ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a47d72a8c7956c76135623c9cc4dbd3"></a><!-- doxytag: member="vtkCollisionModel::SetMatrix" ref="a2a47d72a8c7956c76135623c9cc4dbd3" args="(vtkMatrix4x4 *m)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a2a47d72a8c7956c76135623c9cc4dbd3">SetMatrix</a> (vtkMatrix4x4 *m)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transform matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a10d39b2362692d9ccbabe4a2121debb1">GetMatrix</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform matrix.  <a href="#a10d39b2362692d9ccbabe4a2121debb1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkPolyDataMapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a624671fcc4c316e83e898fbd677b6de3">GetMapper</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dataset mapper.  <a href="#a624671fcc4c316e83e898fbd677b6de3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a597ec136e0adf0087cb67b0ccf3a8d6a">GetActor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model actor.  <a href="#a597ec136e0adf0087cb67b0ccf3a8d6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ab9b0173e4f749c48d10b3bb6462b6dc6">SetSource</a> (vtkPolyData *source)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the source object for mesh synchronization purposes.  <a href="#ab9b0173e4f749c48d10b3bb6462b6dc6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual vtkPolyData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6fc61279c4eda328749115ba97e6a543">GetSource</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the source object for mesh synchronization purposes.  <a href="#a6fc61279c4eda328749115ba97e6a543"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46cc105555b7f22c0fa69c012a784a0e"></a><!-- doxytag: member="vtkCollisionModel::GetHashMap" ref="a46cc105555b7f22c0fa69c012a784a0e" args="()" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a46cc105555b7f22c0fa69c012a784a0e">GetHashMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get synchronization hash map. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ae8e4dab5943d1d5e9b9a6a4c92244795">Hide</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario model.  <a href="#ae8e4dab5943d1d5e9b9a6a4c92244795"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad14571234eddfb65c0b6c76e421ce9ec">Show</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display model.  <a href="#ad14571234eddfb65c0b6c76e421ce9ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a09e7fea03b1111b43b401f49027aff23">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable model.  <a href="#a09e7fea03b1111b43b401f49027aff23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1be31fd4cfe2397c39376a1431bad6b2">Disable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable model.  <a href="#a1be31fd4cfe2397c39376a1431bad6b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a20b3c3f7cb50a1757d70e9e05cfa2f03">IsVisible</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is visible.  <a href="#a20b3c3f7cb50a1757d70e9e05cfa2f03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a9fe9a9c6adfb9323fe273f9558973337">IsHidden</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is hidden.  <a href="#a9fe9a9c6adfb9323fe273f9558973337"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4c38af189c7cba56bf47753018b9da24">IsDisabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is disabled.  <a href="#a4c38af189c7cba56bf47753018b9da24"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2845a009aaad5e8dec4b17eea4671b5"></a><!-- doxytag: member="vtkCollisionModel::IsInitialized" ref="ad2845a009aaad5e8dec4b17eea4671b5" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad2845a009aaad5e8dec4b17eea4671b5">IsInitialized</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object has been initialized. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e7e0b0ee63fe623fa2d3edfb1e59e58"></a><!-- doxytag: member="vtkCollisionModel::New" ref="a4e7e0b0ee63fe623fa2d3edfb1e59e58" args="()" -->
@@ -149,6 +231,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9794047fe0dff326e116c28278bd0727"></a><!-- doxytag: member="vtkCollisionModel::Radius" ref="a9794047fe0dff326e116c28278bd0727" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionModel.html#a9794047fe0dff326e116c28278bd0727">Radius</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Glyph sphere radius. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac17ce1fc966adf97562e9fddec1dc0e9"></a><!-- doxytag: member="vtkCollisionModel::Transform" ref="ac17ce1fc966adf97562e9fddec1dc0e9" args="" -->
+vtkTransform *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionModel.html#ac17ce1fc966adf97562e9fddec1dc0e9">Transform</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform function. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace44eb1e40f3f95ba838a3496cce8c13"></a><!-- doxytag: member="vtkCollisionModel::TransformFilter" ref="ace44eb1e40f3f95ba838a3496cce8c13" args="" -->
 vtkTransformPolyDataFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionModel.html#ace44eb1e40f3f95ba838a3496cce8c13">TransformFilter</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform filter of the model. <br/></td></tr>
@@ -161,6 +246,42 @@ vtkGlyph3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c1f92a843dd94e327f1ced4880b6a4b"></a><!-- doxytag: member="vtkCollisionModel::Collisions" ref="a5c1f92a843dd94e327f1ced4880b6a4b" args="" -->
 <a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionModel.html#a5c1f92a843dd94e327f1ced4880b6a4b">Collisions</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of collisions. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10fd63a3ff5634d901d0e0918ef28d4e"></a><!-- doxytag: member="vtkCollisionModel::Id" ref="a10fd63a3ff5634d901d0e0918ef28d4e" args="" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a10fd63a3ff5634d901d0e0918ef28d4e">Id</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0c75a0ce0eab23fa76ce44b384ad872"></a><!-- doxytag: member="vtkCollisionModel::ObjectId" ref="ad0c75a0ce0eab23fa76ce44b384ad872" args="" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad0c75a0ce0eab23fa76ce44b384ad872">ObjectId</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59cb322ae414e875da90cdbc5a80a5a3"></a><!-- doxytag: member="vtkCollisionModel::Name" ref="a59cb322ae414e875da90cdbc5a80a5a3" args="" -->
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a59cb322ae414e875da90cdbc5a80a5a3">Name</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model name. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38269072db1af1a10e8fca14f35df81d"></a><!-- doxytag: member="vtkCollisionModel::Status" ref="a38269072db1af1a10e8fca14f35df81d" args="" -->
+<a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModelStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a38269072db1af1a10e8fca14f35df81d">Status</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Status. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac995b232c1fe32aad1d304b677724a97"></a><!-- doxytag: member="vtkCollisionModel::FileName" ref="ac995b232c1fe32aad1d304b677724a97" args="" -->
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ac995b232c1fe32aad1d304b677724a97">FileName</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">model data file name <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5e21bd1a69099cdcbc288070225c08"></a><!-- doxytag: member="vtkCollisionModel::Reader" ref="a0e5e21bd1a69099cdcbc288070225c08" args="" -->
+vtkXMLPolyDataReader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a0e5e21bd1a69099cdcbc288070225c08">Reader</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model data file reader. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3514ed8406b87b30c8fc658e9415889d"></a><!-- doxytag: member="vtkCollisionModel::Matrix" ref="a3514ed8406b87b30c8fc658e9415889d" args="" -->
+vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a3514ed8406b87b30c8fc658e9415889d">Matrix</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform Matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29f3febd9f5cefd0728253258a067d95"></a><!-- doxytag: member="vtkCollisionModel::SmoothFilter" ref="a29f3febd9f5cefd0728253258a067d95" args="" -->
+vtkSmoothPolyDataFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a29f3febd9f5cefd0728253258a067d95">SmoothFilter</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Smoothing filter. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacaf6442be40c41fa60f68b66cb295cb"></a><!-- doxytag: member="vtkCollisionModel::Mapper" ref="aacaf6442be40c41fa60f68b66cb295cb" args="" -->
+vtkPolyDataMapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aacaf6442be40c41fa60f68b66cb295cb">Mapper</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">DataSetMapper of the model actor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae27db2cce60d26ee186c96c2aacc1d"></a><!-- doxytag: member="vtkCollisionModel::Actor" ref="abae27db2cce60d26ee186c96c2aacc1d" args="" -->
+vtkActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#abae27db2cce60d26ee186c96c2aacc1d">Actor</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool piece actor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad888347e8a3c6041d1cf43cea91079d2"></a><!-- doxytag: member="vtkCollisionModel::HashMap" ref="ad888347e8a3c6041d1cf43cea91079d2" args="" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad888347e8a3c6041d1cf43cea91079d2">HashMap</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronization HashMap. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dae40c93973f421d49360eaf969a9f3"></a><!-- doxytag: member="vtkCollisionModel::Initialized" ref="a1dae40c93973f421d49360eaf969a9f3" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1dae40c93973f421d49360eaf969a9f3">Initialized</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model initialization flag. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> object defines a collision model based on a mesh (vtkPolyData). </p>
@@ -193,6 +314,63 @@ vtkGlyph3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="a1be31fd4cfe2397c39376a1431bad6b2"></a><!-- doxytag: member="vtkCollisionModel::Disable" ref="a1be31fd4cfe2397c39376a1431bad6b2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Disable model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a09e7fea03b1111b43b401f49027aff23"></a><!-- doxytag: member="vtkCollisionModel::Enable" ref="a09e7fea03b1111b43b401f49027aff23" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a597ec136e0adf0087cb67b0ccf3a8d6a"></a><!-- doxytag: member="vtkCollisionModel::GetActor" ref="a597ec136e0adf0087cb67b0ccf3a8d6a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkActor * vtkModel::GetActor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model actor. </p>
+<p>The model actor will be used for displaying purposes </p>
+
+</div>
+</div>
 <a class="anchor" id="acc31139c319ac966a292500da8260a55"></a><!-- doxytag: member="vtkCollisionModel::GetCollisions" ref="acc31139c319ac966a292500da8260a55" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -210,6 +388,215 @@ vtkGlyph3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Get detected collisions on the model. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>pointer to collection of collisions </dd></dl>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollisionModel.html#acb179036c3211394f722f54c3c5c729a" title="Set detected collisions on the model.">SetCollisions(vtkCollisionCollection * collisions)</a>; </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8921166549bd7464fc16ef5dab6d39f4"></a><!-- doxytag: member="vtkCollisionModel::GetFileName" ref="a8921166549bd7464fc16ef5dab6d39f4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char* vtkModel::GetFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model filename. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a9a2ef2c36899bdda11e31eb5d4e24f4d" title="Assign model filename.">SetFileName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f311b9904a7164a742d468dac19b69f"></a><!-- doxytag: member="vtkCollisionModel::GetId" ref="a7f311b9904a7164a742d468dac19b69f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual vtkIdType vtkModel::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model id. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>SetInput(vtkIdType) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a624671fcc4c316e83e898fbd677b6de3"></a><!-- doxytag: member="vtkCollisionModel::GetMapper" ref="a624671fcc4c316e83e898fbd677b6de3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkPolyDataMapper * vtkModel::GetMapper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get dataset mapper. </p>
+<p>Dataset mapper of the model actor </p>
+
+</div>
+</div>
+<a class="anchor" id="a10d39b2362692d9ccbabe4a2121debb1"></a><!-- doxytag: member="vtkCollisionModel::GetMatrix" ref="a10d39b2362692d9ccbabe4a2121debb1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkMatrix4x4 * vtkModel::GetMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get transform matrix. </p>
+<p>Transformation matrix for displaying purposes </p>
+
+</div>
+</div>
+<a class="anchor" id="a71769995a4a3560e6b80ce636587de90"></a><!-- doxytag: member="vtkCollisionModel::GetModelType" ref="a71769995a4a3560e6b80ce636587de90" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a> vtkModel::GetModelType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a662b5b8eaf63929ece5af9ee6387ae8d" title="Set model type.">SetModelType(vtkModelType)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c3c94274d40b5e1365955ca16049d6b"></a><!-- doxytag: member="vtkCollisionModel::GetName" ref="a4c3c94274d40b5e1365955ca16049d6b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char* vtkModel::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model name. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#ad69b6b1e2cfbb35ef5d7f3dc2528674f" title="Assign model name.">SetName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42a2d686d009f500942918ff34b1079d"></a><!-- doxytag: member="vtkCollisionModel::GetOpacity" ref="a42a2d686d009f500942918ff34b1079d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double vtkModel::GetOpacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model opacity. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a18911f1446e0fa6812dff406a37660db" title="Set model opacity.">SetOpacity(double)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fc61279c4eda328749115ba97e6a543"></a><!-- doxytag: member="vtkCollisionModel::GetSource" ref="a6fc61279c4eda328749115ba97e6a543" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkPolyData * vtkModel::GetSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the source object for mesh synchronization purposes. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#ab9b0173e4f749c48d10b3bb6462b6dc6" title="Specify the source object for mesh synchronization purposes.">SetSource(vtkPolyData *)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec03f4aabb12110bacae93892aa983aa"></a><!-- doxytag: member="vtkCollisionModel::GetStatus" ref="aec03f4aabb12110bacae93892aa983aa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a> vtkModel::GetStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the state of the model. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a4b4c6445f788d5364abf9bbb87411953" title="Assign the model state.">SetStatus(vtkModelStatus)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6b6113945209a6c73f9e97f2a27a7ba"></a><!-- doxytag: member="vtkCollisionModel::GetVisibility" ref="aa6b6113945209a6c73f9e97f2a27a7ba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkModel::GetVisibility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model visibilty. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba" title="Get model visibilty.">GetVisibility()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8e4dab5943d1d5e9b9a6a4c92244795"></a><!-- doxytag: member="vtkCollisionModel::Hide" ref="ae8e4dab5943d1d5e9b9a6a4c92244795" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Hide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hide scenario model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
 </div>
@@ -236,6 +623,77 @@ vtkGlyph3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </ul>
 
 <p>Reimplemented from <a class="el" href="classvtkModel.html#a4ba6baa6891f8ee482e908fd74330514">vtkModel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c38af189c7cba56bf47753018b9da24"></a><!-- doxytag: member="vtkCollisionModel::IsDisabled" ref="a4c38af189c7cba56bf47753018b9da24" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkModel::IsDisabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if model is disabled. </p>
+<p>When an model is disabled it will NOT:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a9fe9a9c6adfb9323fe273f9558973337"></a><!-- doxytag: member="vtkCollisionModel::IsHidden" ref="a9fe9a9c6adfb9323fe273f9558973337" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkModel::IsHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if model is hidden. </p>
+<p>When an model is disabled it will NOT:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection. It will be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a20b3c3f7cb50a1757d70e9e05cfa2f03"></a><!-- doxytag: member="vtkCollisionModel::IsVisible" ref="a20b3c3f7cb50a1757d70e9e05cfa2f03" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkModel::IsVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if model is visible. </p>
+<p>When an model is disabled it will:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
 
 </div>
 </div>
@@ -292,12 +750,212 @@ vtkGlyph3D *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="a9a2ef2c36899bdda11e31eb5d4e24f4d"></a><!-- doxytag: member="vtkCollisionModel::SetFileName" ref="a9a2ef2c36899bdda11e31eb5d4e24f4d" args="(const char *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetFileName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign model filename. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a8921166549bd7464fc16ef5dab6d39f4" title="Return model filename.">GetFileName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d654a42634818a295c4340737bfd28e"></a><!-- doxytag: member="vtkCollisionModel::SetId" ref="a6d654a42634818a295c4340737bfd28e" args="(vtkIdType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetId </td>
+          <td>(</td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model id. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtkIdType <a class="el" href="classvtkModel.html#a7f311b9904a7164a742d468dac19b69f" title="Return model id.">GetId()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a662b5b8eaf63929ece5af9ee6387ae8d"></a><!-- doxytag: member="vtkCollisionModel::SetModelType" ref="a662b5b8eaf63929ece5af9ee6387ae8d" args="(vtkModel::vtkModelType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetModelType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtlModelType <a class="el" href="classvtkModel.html#a71769995a4a3560e6b80ce636587de90" title="Return model type.">GetModelType()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad69b6b1e2cfbb35ef5d7f3dc2528674f"></a><!-- doxytag: member="vtkCollisionModel::SetName" ref="ad69b6b1e2cfbb35ef5d7f3dc2528674f" args="(const char *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign model name. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a4c3c94274d40b5e1365955ca16049d6b" title="Return model name.">GetName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3084d9093ae6c6cfb769d3c5fe654317"></a><!-- doxytag: member="vtkCollisionModel::SetObjectId" ref="a3084d9093ae6c6cfb769d3c5fe654317" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetObjectId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the object id of the model. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>int <a class="el" href="classvtkModel.html#a933d94b0366783a5cf7c6007d9af73e2" title="Get the object id of the model.">GetObjectId()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18911f1446e0fa6812dff406a37660db"></a><!-- doxytag: member="vtkCollisionModel::SetOpacity" ref="a18911f1446e0fa6812dff406a37660db" args="(double)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetOpacity </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model opacity. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#a42a2d686d009f500942918ff34b1079d" title="Get model opacity.">GetOpacity()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9b0173e4f749c48d10b3bb6462b6dc6"></a><!-- doxytag: member="vtkCollisionModel::SetSource" ref="ab9b0173e4f749c48d10b3bb6462b6dc6" args="(vtkPolyData *source)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::SetSource </td>
+          <td>(</td>
+          <td class="paramtype">vtkPolyData *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Specify the source object for mesh synchronization purposes. </p>
+<p>This is an optional input. If source is set, the model primary mesh will be synchronized to this source mesh whenever a change is made on it. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtkPolyData* <a class="el" href="classvtkModel.html#a6fc61279c4eda328749115ba97e6a543" title="Return the source object for mesh synchronization purposes.">GetSource()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b4c6445f788d5364abf9bbb87411953"></a><!-- doxytag: member="vtkCollisionModel::SetStatus" ref="a4b4c6445f788d5364abf9bbb87411953" args="(vtkModel::vtkModelStatus)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign the model state. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#aec03f4aabb12110bacae93892aa983aa" title="Returns the state of the model.">GetStatus()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab45dc20e53a7ec4a69354fa72555143a"></a><!-- doxytag: member="vtkCollisionModel::SetVisibility" ref="ab45dc20e53a7ec4a69354fa72555143a" args="(bool)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetVisibility </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model visibility. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba" title="Get model visibilty.">GetVisibility()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad14571234eddfb65c0b6c76e421ce9ec"></a><!-- doxytag: member="vtkCollisionModel::Show" ref="ad14571234eddfb65c0b6c76e421ce9ec" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Show/Display model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>CollisionDetection/<a class="el" href="vtkCollisionModel_8h_source.html">vtkCollisionModel.h</a></li>
 <li>CollisionDetection/vtkCollisionModel.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

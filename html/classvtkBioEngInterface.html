@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -80,6 +80,21 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the collision detection library with the initial values,.  <a href="#a52f71a20ab8e16bbeb357642975a5b67"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkBioEngInterface.html#af04a067b7a6f524faa7ff14552147260">Update</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the collision detection library.  <a href="#af04a067b7a6f524faa7ff14552147260"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2599c3c960a2f11e2d6364b42e5cf5b"></a><!-- doxytag: member="vtkBioEngInterface::vtkTypeRevisionMacro" ref="ab2599c3c960a2f11e2d6364b42e5cf5b" args="(vtkCollisionDetection, vtkObject)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#ab2599c3c960a2f11e2d6364b42e5cf5b">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkCollisionDetection.html">vtkCollisionDetection</a>, vtkObject)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac51b54a751fef2c61ae704a73291bede"></a><!-- doxytag: member="vtkBioEngInterface::SetModels" ref="ac51b54a751fef2c61ae704a73291bede" args="(vtkModelCollection *models)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#ac51b54a751fef2c61ae704a73291bede">SetModels</a> (<a class="el" href="classvtkModelCollection.html">vtkModelCollection</a> *models)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the collision models to be checked in the collision detection process. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ac69f401dfdfc9225b723624805da32"></a><!-- doxytag: member="vtkBioEngInterface::AddModel" ref="a5ac69f401dfdfc9225b723624805da32" args="(vtkCollisionModel *element)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#a5ac69f401dfdfc9225b723624805da32">AddModel</a> (<a class="el" href="classvtkCollisionModel.html">vtkCollisionModel</a> *element)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new collision model to the detector. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cb18df6e667a857aab3346ce37c4d45"></a><!-- doxytag: member="vtkBioEngInterface::GetCollisions" ref="a3cb18df6e667a857aab3346ce37c4d45" args="()" -->
+<a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#a3cb18df6e667a857aab3346ce37c4d45">GetCollisions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the collisions detected. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff1fa875afc75f71eb60aedecac01213"></a><!-- doxytag: member="vtkBioEngInterface::GetNumberOfCollisions" ref="aff1fa875afc75f71eb60aedecac01213" args="()" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#aff1fa875afc75f71eb60aedecac01213">GetNumberOfCollisions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of collisions detected. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0bafffd48213a95c2fdc51261cd404e"></a><!-- doxytag: member="vtkBioEngInterface::New" ref="ab0bafffd48213a95c2fdc51261cd404e" args="()" -->
@@ -93,6 +108,8 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac707a179d980d5c5f55786c35549c517"></a><!-- doxytag: member="vtkBioEngInterface::~vtkBioEngInterface" ref="ac707a179d980d5c5f55786c35549c517" args="()" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkBioEngInterface.html#ac707a179d980d5c5f55786c35549c517">~vtkBioEngInterface</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#a3c078f8a386516ef2a0a17cdac728c5f">Reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear previous executions of the collision detection process.  <a href="#a3c078f8a386516ef2a0a17cdac728c5f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d6fa9a819eaa273c99bdb3cccd3c0fd"></a><!-- doxytag: member="vtkBioEngInterface::DetectionFilter" ref="a7d6fa9a819eaa273c99bdb3cccd3c0fd" args="" -->
@@ -104,6 +121,10 @@ vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac544f180f2fc9b2580020e6164e538b"></a><!-- doxytag: member="vtkBioEngInterface::Matrix1" ref="aac544f180f2fc9b2580020e6164e538b" args="" -->
 vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkBioEngInterface.html#aac544f180f2fc9b2580020e6164e538b">Matrix1</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkModelCollection.html">vtkModelCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#a9c27192d883a56e802e8bfb502a483f1">Models</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of models.  <a href="#a9c27192d883a56e802e8bfb502a483f1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollisionDetection.html#a14539f8687ec5d9854b0b45ed0e3806f">Collisions</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of collisions.  <a href="#a14539f8687ec5d9854b0b45ed0e3806f"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Interface to the vtkbioeng collision detection library. </p>
@@ -129,6 +150,25 @@ vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 </div>
 </div>
+<a class="anchor" id="a3c078f8a386516ef2a0a17cdac728c5f"></a><!-- doxytag: member="vtkBioEngInterface::Reset" ref="a3c078f8a386516ef2a0a17cdac728c5f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkCollisionDetection::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clear previous executions of the collision detection process. </p>
+<p>Should be called every time collision detection is performed </p>
+
+</div>
+</div>
 <a class="anchor" id="af04a067b7a6f524faa7ff14552147260"></a><!-- doxytag: member="vtkBioEngInterface::Update" ref="af04a067b7a6f524faa7ff14552147260" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -150,12 +190,45 @@ vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 </div>
 </div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a14539f8687ec5d9854b0b45ed0e3806f"></a><!-- doxytag: member="vtkBioEngInterface::Collisions" ref="a14539f8687ec5d9854b0b45ed0e3806f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a>* <a class="el" href="classvtkCollisionDetection.html#a14539f8687ec5d9854b0b45ed0e3806f">vtkCollisionDetection::Collisions</a><code> [protected, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Collection of collisions. </p>
+<p>After the collision detection process has been executed the collisions between models are stored in this collection. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c27192d883a56e802e8bfb502a483f1"></a><!-- doxytag: member="vtkBioEngInterface::Models" ref="a9c27192d883a56e802e8bfb502a483f1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvtkModelCollection.html">vtkModelCollection</a>* <a class="el" href="classvtkCollisionDetection.html#a9c27192d883a56e802e8bfb502a483f1">vtkCollisionDetection::Models</a><code> [protected, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Collection of models. </p>
+<p>Every model contained in these collection will be processed in the collision detection process. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>CollisionDetection/<a class="el" href="vtkBioEngInterface_8h_source.html">vtkBioEngInterface.h</a></li>
 <li>CollisionDetection/vtkBioEngInterface.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

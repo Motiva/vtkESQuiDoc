@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -39,7 +39,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">vtkVSP Class Reference</div>  </div>
 </div>
@@ -188,23 +189,266 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75642238e29ebd171de9c9786eac0361"></a><!-- doxytag: member="vtkVSP::GetInflationPressure" ref="a75642238e29ebd171de9c9786eac0361" args="()" -->
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkVSP.html#a75642238e29ebd171de9c9786eac0361">GetInflationPressure</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Inflation Pressure. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3394196586f112adfd8196a15b1df4a"></a><!-- doxytag: member="vtkVSP::vtkTypeRevisionMacro" ref="ae3394196586f112adfd8196a15b1df4a" args="(vtkHaptic, vtkObject)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#ae3394196586f112adfd8196a15b1df4a">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkHaptic.html">vtkHaptic</a>, vtkObject)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a03c7815125924b8771372879ad367e09">SetName</a> (const char *name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the haptic name.  <a href="#a03c7815125924b8771372879ad367e09"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#abdf00bb1f22ee8c984982c4e90c729a5">GetName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the haptic name.  <a href="#abdf00bb1f22ee8c984982c4e90c729a5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#adcc7f106e62cd1b73ed9999bb70b8470">SetTools</a> (<a class="el" href="classvtkScenarioObjectCollection.html">vtkScenarioObjectCollection</a> *collection)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the collection of tools of the haptic device.  <a href="#adcc7f106e62cd1b73ed9999bb70b8470"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkScenarioObjectCollection.html">vtkScenarioObjectCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#ad9d6c1a1cf8dc9e04e27299917c1856c">GetTools</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collection of tools of the haptic device.  <a href="#ad9d6c1a1cf8dc9e04e27299917c1856c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a8d7f5f6a1cecf4dff57435d53ead0481">AddTool</a> (<a class="el" href="classvtkTool.html">vtkTool</a> *tool)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add tool to the haptic device.  <a href="#a8d7f5f6a1cecf4dff57435d53ead0481"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a815754022f0ce280b1e1297dd40d3a4f">ReplaceTool</a> (vtkIdType index, <a class="el" href="classvtkTool.html">vtkTool</a> *tool)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a tool in the specified position.  <a href="#a815754022f0ce280b1e1297dd40d3a4f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a556fba903ad058c08ed9409f9f26dc90">RemoveTool</a> (vtkIdType index)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the tool at the specified id from the haptic.  <a href="#a556fba903ad058c08ed9409f9f26dc90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkTool.html">vtkTool</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a2f4122cc3b5673852314d8e6a72d1ca0">GetTool</a> (vtkIdType id)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the tool at the specified position.  <a href="#a2f4122cc3b5673852314d8e6a72d1ca0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304427c71c76a1049e4e009a97d30331"></a><!-- doxytag: member="vtkVSP::GetNumberOfTools" ref="a304427c71c76a1049e4e009a97d30331" args="()" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a304427c71c76a1049e4e009a97d30331">GetNumberOfTools</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of tools in the haptic device. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b460a3fa8f71d1b027471d7e171c68e"></a><!-- doxytag: member="vtkVSP::New" ref="a0b460a3fa8f71d1b027471d7e171c68e" args="()" -->
 static <a class="el" href="classvtkVSP.html">vtkVSP</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkVSP.html#a0b460a3fa8f71d1b027471d7e171c68e">New</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new <a class="el" href="classvtkVSP.html" title="vtkVSP class wraps the access to the IHP haptic device.">vtkVSP</a> object. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a219429c7185471e84c9ea33275c0ab32"></a><!-- doxytag: member="vtkVSP::Name" ref="a219429c7185471e84c9ea33275c0ab32" args="" -->
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a219429c7185471e84c9ea33275c0ab32">Name</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Haptic device name. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceb72fc88b89e1b60acc4b3d4decb03e"></a><!-- doxytag: member="vtkVSP::Tools" ref="aceb72fc88b89e1b60acc4b3d4decb03e" args="" -->
+<a class="el" href="classvtkScenarioObjectCollection.html">vtkScenarioObjectCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#aceb72fc88b89e1b60acc4b3d4decb03e">Tools</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scenario tools. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4837e3d8ae7cce4cc3ff8851409176bd"></a><!-- doxytag: member="vtkVSP::NumberOfTools" ref="a4837e3d8ae7cce4cc3ff8851409176bd" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkHaptic.html#a4837e3d8ae7cce4cc3ff8851409176bd">NumberOfTools</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of tools of the haptic device. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classvtkVSP.html" title="vtkVSP class wraps the access to the IHP haptic device.">vtkVSP</a> class wraps the access to the IHP haptic device. </p>
 <p>This interface enables the interaction with the Xitact VSP haptic device.<br/>
  In a cyclic process the haptic is synchronously checked for changes. Device physical attributes are saved and then sent to the simulation process.<br/>
  Access method to device initialization has also been implemented. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a8d7f5f6a1cecf4dff57435d53ead0481"></a><!-- doxytag: member="vtkVSP::AddTool" ref="a8d7f5f6a1cecf4dff57435d53ead0481" args="(vtkTool *tool)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkHaptic::AddTool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkTool.html">vtkTool</a> *&#160;</td>
+          <td class="paramname"><em>tool</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add tool to the haptic device. </p>
+<p>The tool will be inserted at the end of the list </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tool</td><td><a class="el" href="classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object.">vtkScenarioObject</a> tool to be inserted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>position of the added tool. </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd>InsertTool(vtkScenarioObject * tool) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abdf00bb1f22ee8c984982c4e90c729a5"></a><!-- doxytag: member="vtkVSP::GetName" ref="abdf00bb1f22ee8c984982c4e90c729a5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * vtkHaptic::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the haptic name. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>haptic device name </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkHaptic.html#a03c7815125924b8771372879ad367e09" title="Set the haptic name.">SetName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f4122cc3b5673852314d8e6a72d1ca0"></a><!-- doxytag: member="vtkVSP::GetTool" ref="a2f4122cc3b5673852314d8e6a72d1ca0" args="(vtkIdType id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvtkTool.html">vtkTool</a> * vtkHaptic::GetTool </td>
+          <td>(</td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the tool at the specified position. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index of the tool to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object.">vtkScenarioObject</a> tool </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9d6c1a1cf8dc9e04e27299917c1856c"></a><!-- doxytag: member="vtkVSP::GetTools" ref="ad9d6c1a1cf8dc9e04e27299917c1856c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvtkScenarioObjectCollection.html">vtkScenarioObjectCollection</a> * vtkHaptic::GetTools </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the collection of tools of the haptic device. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkHaptic.html#adcc7f106e62cd1b73ed9999bb70b8470" title="Set the collection of tools of the haptic device.">SetTools(vtkScenarioObjectCollection * collection)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a556fba903ad058c08ed9409f9f26dc90"></a><!-- doxytag: member="vtkVSP::RemoveTool" ref="a556fba903ad058c08ed9409f9f26dc90" args="(vtkIdType index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkHaptic::RemoveTool </td>
+          <td>(</td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Remove the tool at the specified id from the haptic. </p>
+<p>It will only remove the tool from the collection, it does not free memory </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>index of the tool to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a815754022f0ce280b1e1297dd40d3a4f"></a><!-- doxytag: member="vtkVSP::ReplaceTool" ref="a815754022f0ce280b1e1297dd40d3a4f" args="(vtkIdType index, vtkTool *tool)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkHaptic::ReplaceTool </td>
+          <td>(</td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvtkTool.html">vtkTool</a> *&#160;</td>
+          <td class="paramname"><em>tool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Insert a tool in the specified position. </p>
+<p>If the given position is not empty, the content is replaced by the new model </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>index of the list where the tool will be added </td></tr>
+    <tr><td class="paramname">tool</td><td><a class="el" href="classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object.">vtkScenarioObject</a> tool to be inserted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd>InsertNextTool(vtkScenarioObject * tool) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03c7815125924b8771372879ad367e09"></a><!-- doxytag: member="vtkVSP::SetName" ref="a03c7815125924b8771372879ad367e09" args="(const char *name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkHaptic::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the haptic name. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the haptic device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkHaptic.html#abdf00bb1f22ee8c984982c4e90c729a5" title="Return the haptic name.">GetName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adcc7f106e62cd1b73ed9999bb70b8470"></a><!-- doxytag: member="vtkVSP::SetTools" ref="adcc7f106e62cd1b73ed9999bb70b8470" args="(vtkScenarioObjectCollection *collection)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkHaptic::SetTools </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkScenarioObjectCollection.html">vtkScenarioObjectCollection</a> *&#160;</td>
+          <td class="paramname"><em>collection</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the collection of tools of the haptic device. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collection</td><td>collection of tools to be inserted to the haptic device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkHaptic.html#ad9d6c1a1cf8dc9e04e27299917c1856c" title="Get the collection of tools of the haptic device.">GetTools()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Haptics/<a class="el" href="vtkVSP_8h_source.html">vtkVSP.h</a></li>
 <li>Haptics/vtkVSP.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:35 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

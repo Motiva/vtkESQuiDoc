@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -145,24 +145,26 @@
 <a name="l00155"></a>00155 
 <a name="l00157"></a><a class="code" href="classvtkCollisionModel.html#a9794047fe0dff326e116c28278bd0727">00157</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkCollisionModel.html#a9794047fe0dff326e116c28278bd0727" title="Glyph sphere radius.">Radius</a>;
 <a name="l00158"></a>00158 
-<a name="l00160"></a><a class="code" href="classvtkCollisionModel.html#ace44eb1e40f3f95ba838a3496cce8c13">00160</a>     vtkTransformPolyDataFilter *<a class="code" href="classvtkCollisionModel.html#ace44eb1e40f3f95ba838a3496cce8c13" title="Transform filter of the model.">TransformFilter</a>;
+<a name="l00160"></a><a class="code" href="classvtkCollisionModel.html#ac17ce1fc966adf97562e9fddec1dc0e9">00160</a>     vtkTransform * <a class="code" href="classvtkCollisionModel.html#ac17ce1fc966adf97562e9fddec1dc0e9" title="Transform function.">Transform</a>;
 <a name="l00161"></a>00161 
-<a name="l00163"></a><a class="code" href="classvtkCollisionModel.html#a7d08cca4766d40c38226dcfa918077c8">00163</a>     vtkSphereSource * <a class="code" href="classvtkCollisionModel.html#a7d08cca4766d40c38226dcfa918077c8" title="Sphere source for glyphs.">Sphere</a>;
+<a name="l00163"></a><a class="code" href="classvtkCollisionModel.html#ace44eb1e40f3f95ba838a3496cce8c13">00163</a>     vtkTransformPolyDataFilter *<a class="code" href="classvtkCollisionModel.html#ace44eb1e40f3f95ba838a3496cce8c13" title="Transform filter of the model.">TransformFilter</a>;
 <a name="l00164"></a>00164 
-<a name="l00166"></a><a class="code" href="classvtkCollisionModel.html#a6dd56472c7641033d2c7b877aab4af89">00166</a>     vtkGlyph3D * <a class="code" href="classvtkCollisionModel.html#a6dd56472c7641033d2c7b877aab4af89" title="Glyphs display of points.">Glyphs</a>;
+<a name="l00166"></a><a class="code" href="classvtkCollisionModel.html#a7d08cca4766d40c38226dcfa918077c8">00166</a>     vtkSphereSource * <a class="code" href="classvtkCollisionModel.html#a7d08cca4766d40c38226dcfa918077c8" title="Sphere source for glyphs.">Sphere</a>;
 <a name="l00167"></a>00167 
-<a name="l00169"></a><a class="code" href="classvtkCollisionModel.html#a5c1f92a843dd94e327f1ced4880b6a4b">00169</a>     <a class="code" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions.">vtkCollisionCollection</a> * <a class="code" href="classvtkCollisionModel.html#a5c1f92a843dd94e327f1ced4880b6a4b" title="Collection of collisions.">Collisions</a>;
+<a name="l00169"></a><a class="code" href="classvtkCollisionModel.html#a6dd56472c7641033d2c7b877aab4af89">00169</a>     vtkGlyph3D * <a class="code" href="classvtkCollisionModel.html#a6dd56472c7641033d2c7b877aab4af89" title="Glyphs display of points.">Glyphs</a>;
 <a name="l00170"></a>00170 
-<a name="l00171"></a>00171 <span class="keyword">private</span>:
-<a name="l00172"></a>00172     <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> (<span class="keyword">const</span> <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> &amp;);
-<a name="l00173"></a>00173     <span class="keywordtype">void</span> operator =(<span class="keyword">const</span> <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> &amp;);
-<a name="l00174"></a>00174 
-<a name="l00175"></a>00175 };
-<a name="l00176"></a>00176 
-<a name="l00177"></a>00177 <span class="preprocessor">#endif</span>
+<a name="l00172"></a><a class="code" href="classvtkCollisionModel.html#a5c1f92a843dd94e327f1ced4880b6a4b">00172</a>     <a class="code" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions.">vtkCollisionCollection</a> * <a class="code" href="classvtkCollisionModel.html#a5c1f92a843dd94e327f1ced4880b6a4b" title="Collection of collisions.">Collisions</a>;
+<a name="l00173"></a>00173 
+<a name="l00174"></a>00174 <span class="keyword">private</span>:
+<a name="l00175"></a>00175     <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> (<span class="keyword">const</span> <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> &amp;);
+<a name="l00176"></a>00176     <span class="keywordtype">void</span> operator =(<span class="keyword">const</span> <a class="code" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData).">vtkCollisionModel</a> &amp;);
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 };
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 <span class="preprocessor">#endif</span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

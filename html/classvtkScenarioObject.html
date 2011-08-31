@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -155,12 +155,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display object.  <a href="#a6fc22f49a32fd36ee2a3384c2ab56b7b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a9a8c0925dd5f8dbb8780542bfeeed0e1">Hide</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario object.  <a href="#a9a8c0925dd5f8dbb8780542bfeeed0e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a08d62259fb6536704384bc69ff4b3301">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable object.  <a href="#a08d62259fb6536704384bc69ff4b3301"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab8f6259410074f691c6b31609cc2147d">Disable</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable object.  <a href="#ab8f6259410074f691c6b31609cc2147d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ac3df3cf3a2d59a16ef088f1d61262e96">IsVisible</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is visible.  <a href="#ac3df3cf3a2d59a16ef088f1d61262e96"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#acce22803bb40ad9fc3a0449b8eddd008">IsHidden</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is hidden.  <a href="#acce22803bb40ad9fc3a0449b8eddd008"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a6a7b64b2d666039a73f73c12a6bb3b6a">IsEnabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is visible.  <a href="#a6a7b64b2d666039a73f73c12a6bb3b6a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#af6d19ed8149265a9c4fbd3bd924120b1">IsDisabled</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is disabled.  <a href="#af6d19ed8149265a9c4fbd3bd924120b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcab930d00b1cc9fc5e998949c68e923"></a><!-- doxytag: member="vtkScenarioObject::IsInitialized" ref="afcab930d00b1cc9fc5e998949c68e923" args="()" -->
@@ -258,6 +258,25 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="memdoc">
 
 <p>Disable object. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a08d62259fb6536704384bc69ff4b3301"></a><!-- doxytag: member="vtkScenarioObject::Enable" ref="a08d62259fb6536704384bc69ff4b3301" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable object. </p>
 <p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
@@ -447,35 +466,12 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<a class="anchor" id="acce22803bb40ad9fc3a0449b8eddd008"></a><!-- doxytag: member="vtkScenarioObject::IsHidden" ref="acce22803bb40ad9fc3a0449b8eddd008" args="()" -->
+<a class="anchor" id="a6a7b64b2d666039a73f73c12a6bb3b6a"></a><!-- doxytag: member="vtkScenarioObject::IsEnabled" ref="a6a7b64b2d666039a73f73c12a6bb3b6a" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool vtkScenarioObject::IsHidden </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Check if object is hidden. </p>
-<p>When an object is disabled it will NOT:</p>
-<ul>
-<li>be visible.</li>
-<li>be computed in collision detection. It will be used in simulation. </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="ac3df3cf3a2d59a16ef088f1d61262e96"></a><!-- doxytag: member="vtkScenarioObject::IsVisible" ref="ac3df3cf3a2d59a16ef088f1d61262e96" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vtkScenarioObject::IsVisible </td>
+          <td class="memname">bool vtkScenarioObject::IsEnabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline]</code></td>
@@ -485,7 +481,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="memdoc">
 
 <p>Check if object is visible. </p>
-<p>When an object is disabled it will:</p>
+<p>When an object is enabled it will:</p>
 <ul>
 <li>be visible.</li>
 <li>be computed in collision detection.</li>
@@ -868,7 +864,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <li>Scenario/vtkScenarioObject.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:35 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

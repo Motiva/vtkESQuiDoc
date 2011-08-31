@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -49,6 +49,7 @@ This is the complete list of members for <a class="el" href="classvtkToolGrasper
   <tr class="memlist"><td><a class="el" href="classvtkToolLaparoscopy.html#aae92c27b66b795441c3feba84856b57b">Depth</a></td><td><a class="el" href="classvtkToolLaparoscopy.html">vtkToolLaparoscopy</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#ab8f6259410074f691c6b31609cc2147d">Disable</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#ab3c9e12639223fd3138ff5826e46351a">Elements</a></td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a08d62259fb6536704384bc69ff4b3301">Enable</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolLaparoscopy.html#a1575099ef78427b3c83266c1ed32898e">ForceFeedback</a></td><td><a class="el" href="classvtkToolLaparoscopy.html">vtkToolLaparoscopy</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#a2963e52fb4974c3ccdfb6e00a59e7688">GetClassName</a>()</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#abfa7184d233ed019fadf13cae589616d">GetCollisions</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td></td></tr>
@@ -78,9 +79,8 @@ This is the complete list of members for <a class="el" href="classvtkToolGrasper
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#ad2dfa9bf5bfc9e4dfc5671c001153395">InsertNextCollision</a>(vtkCollision *collision)</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#aa5df5b435f833f915c62f36a2b8fdd5c">IsClosed</a>()</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#af6d19ed8149265a9c4fbd3bd924120b1">IsDisabled</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#acce22803bb40ad9fc3a0449b8eddd008">IsHidden</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a6a7b64b2d666039a73f73c12a6bb3b6a">IsEnabled</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#afcab930d00b1cc9fc5e998949c68e923">IsInitialized</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#ac3df3cf3a2d59a16ef088f1d61262e96">IsVisible</a>()</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#a5f3d7760b4a4c8d5a757acec0169b87a">LeftLever</a></td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a87977c3f1e79108c637d57192e99b5ab">Name</a></td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#ab94020d6813d2db5d107fe31c195f6d9">New</a>()</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [static]</code></td></tr>
@@ -132,6 +132,7 @@ This is the complete list of members for <a class="el" href="classvtkToolGrasper
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a55bf89ee29785e329e9a2eea61a3782e">Translate</a>(double *vector)</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObjectStatus</a> enum name</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObjectType</a> enum name</td><td><a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#a8a097116c4dea912bcb603f0e7542e38">vtkToolGrasper</a>()</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolLaparoscopy.html#a43daf6f325214950a34d47c31deb1aae">vtkToolLaparoscopyModel</a> enum name</td><td><a class="el" href="classvtkToolLaparoscopy.html">vtkToolLaparoscopy</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkToolType</a> enum name</td><td><a class="el" href="classvtkTool.html">vtkTool</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#a5b4332869401fd3e7c459c4898d4ca83">vtkTypeRevisionMacro</a>(vtkToolGrasper, vtkToolLaparoscopy)</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td></td></tr>
@@ -141,7 +142,7 @@ This is the complete list of members for <a class="el" href="classvtkToolGrasper
   <tr class="memlist"><td><a class="el" href="classvtkToolGrasper.html#ab769eaa2c989e530ee239b852ccfa5f5">Yaw</a>(double angle)</td><td><a class="el" href="classvtkToolGrasper.html">vtkToolGrasper</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classvtkToolLaparoscopy.html#ad08f41426c33237d2335f677489631ee">YawAngle</a></td><td><a class="el" href="classvtkToolLaparoscopy.html">vtkToolLaparoscopy</a></td><td><code> [protected]</code></td></tr>
 </table></div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:35 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

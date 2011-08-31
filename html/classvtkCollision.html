@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,10 @@ virtual <br class="typebreak"/>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element mesh point identifier where the collision has occurred.  <a href="#a4211a8844aaa3f60f38afa7cc6819678"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a37262554d48f8637aa21cddb32844f3f">GetPointId</a> (int id)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collided point identifier.  <a href="#a37262554d48f8637aa21cddb32844f3f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#ab170e9e26535fc60daaad609c0fab2a8">SetSyncPointId</a> (int id, int pointId)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element sync mesh point identifier where the collision has occurred.  <a href="#ab170e9e26535fc60daaad609c0fab2a8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a3c56d4c52b263d897bda5bbd8d2129a5">GetSyncPointId</a> (int id)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collided point identifier.  <a href="#a3c56d4c52b263d897bda5bbd8d2129a5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a70a2d90e2998cae2852da88fd5542276">SetPoint</a> (int id, double x, double y, double z)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the organ mesh point position of the collision.  <a href="#a70a2d90e2998cae2852da88fd5542276"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a21b48ddc0472613d3b38c443af5355c3">SetPoint</a> (int id, double point[3])</td></tr>
@@ -127,15 +131,18 @@ vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1589c396e632547d6f38f1295fbb8978"></a><!-- doxytag: member="vtkCollision::ObjectIds" ref="a1589c396e632547d6f38f1295fbb8978" args="" -->
 vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a1589c396e632547d6f38f1295fbb8978">ObjectIds</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collided objects identifiers. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a258e8dae50b04a81bcdb2deff1f14885"></a><!-- doxytag: member="vtkCollision::Points" ref="a258e8dae50b04a81bcdb2deff1f14885" args="" -->
-vtkPoints *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a258e8dae50b04a81bcdb2deff1f14885">Points</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision point on both objects. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae01f305d0f064e63174e7358dc39a5d6"></a><!-- doxytag: member="vtkCollision::PointIds" ref="ae01f305d0f064e63174e7358dc39a5d6" args="" -->
-vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#ae01f305d0f064e63174e7358dc39a5d6">PointIds</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Point identifiers of the collided elements. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7788fb15526337774a0763e275e821c"></a><!-- doxytag: member="vtkCollision::CellIds" ref="ac7788fb15526337774a0763e275e821c" args="" -->
 vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#ac7788fb15526337774a0763e275e821c">CellIds</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clashed point cell identifier. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae01f305d0f064e63174e7358dc39a5d6"></a><!-- doxytag: member="vtkCollision::PointIds" ref="ae01f305d0f064e63174e7358dc39a5d6" args="" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#ae01f305d0f064e63174e7358dc39a5d6">PointIds</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Point identifiers of the collided elements. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a258e8dae50b04a81bcdb2deff1f14885"></a><!-- doxytag: member="vtkCollision::Points" ref="a258e8dae50b04a81bcdb2deff1f14885" args="" -->
+vtkPoints *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a258e8dae50b04a81bcdb2deff1f14885">Points</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision point on both objects. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9095ff96538fb616a0903b9adef5b66"></a><!-- doxytag: member="vtkCollision::SyncPointIds" ref="ac9095ff96538fb616a0903b9adef5b66" args="" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#ac9095ff96538fb616a0903b9adef5b66">SyncPointIds</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Point identifiers of the synchronization meshes. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74492e3fdfe72741afef60c4f5776fe4"></a><!-- doxytag: member="vtkCollision::Distance" ref="a74492e3fdfe72741afef60c4f5776fe4" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCollision.html#a74492e3fdfe72741afef60c4f5776fe4">Distance</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar distance between points. <br/></td></tr>
@@ -310,6 +317,33 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a3c56d4c52b263d897bda5bbd8d2129a5"></a><!-- doxytag: member="vtkCollision::GetSyncPointId" ref="a3c56d4c52b263d897bda5bbd8d2129a5" args="(int id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int vtkCollision::GetSyncPointId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the collided point identifier. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index of the element in the collection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>point id of the organ mesh </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollision.html#a4211a8844aaa3f60f38afa7cc6819678" title="Set the element mesh point identifier where the collision has occurred.">SetPointId(int id, int pointId)</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae1b219342b9572b82c5bd1bcf781782f"></a><!-- doxytag: member="vtkCollision::SetCellId" ref="ae1b219342b9572b82c5bd1bcf781782f" args="(int id, vtkIdType value)" -->
 <div class="memitem">
 <div class="memproto">
@@ -441,6 +475,43 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a21b48ddc0472613d3b38c443af5355c3"></a><!-- doxytag: member="vtkCollision::SetPoint" ref="a21b48ddc0472613d3b38c443af5355c3" args="(int id, double point[3])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkCollision::SetPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>point</em>[3]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the collided point position. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index of the element in the collection </td></tr>
+    <tr><td class="paramname">point[]</td><td>[x, y, z] coordinates vector of the collision point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollision.html#ad9f042d582c076232fd9b69c3373bf00" title="Returns collided point position.">GetPoint(int id)</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a70a2d90e2998cae2852da88fd5542276"></a><!-- doxytag: member="vtkCollision::SetPoint" ref="a70a2d90e2998cae2852da88fd5542276" args="(int id, double x, double y, double z)" -->
 <div class="memitem">
 <div class="memproto">
@@ -492,43 +563,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a21b48ddc0472613d3b38c443af5355c3"></a><!-- doxytag: member="vtkCollision::SetPoint" ref="a21b48ddc0472613d3b38c443af5355c3" args="(int id, double point[3])" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkCollision::SetPoint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>point</em>[3]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Set the collided point position. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>index of the element in the collection </td></tr>
-    <tr><td class="paramname">point[]</td><td>[x, y, z] coordinates vector of the collision point </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollision.html#ad9f042d582c076232fd9b69c3373bf00" title="Returns collided point position.">GetPoint(int id)</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a4211a8844aaa3f60f38afa7cc6819678"></a><!-- doxytag: member="vtkCollision::SetPointId" ref="a4211a8844aaa3f60f38afa7cc6819678" args="(int id, int pointId)" -->
 <div class="memitem">
 <div class="memproto">
@@ -566,12 +600,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="ab170e9e26535fc60daaad609c0fab2a8"></a><!-- doxytag: member="vtkCollision::SetSyncPointId" ref="ab170e9e26535fc60daaad609c0fab2a8" args="(int id, int pointId)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkCollision::SetSyncPointId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pointId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the element sync mesh point identifier where the collision has occurred. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>index of the element in the collection </td></tr>
+    <tr><td class="paramname">pointId</td><td>sync mesh point identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollision.html#a37262554d48f8637aa21cddb32844f3f" title="Get the collided point identifier.">GetPointId()</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>CollisionDetection/<a class="el" href="vtkCollision_8h_source.html">vtkCollision.h</a></li>
 <li>CollisionDetection/vtkCollision.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

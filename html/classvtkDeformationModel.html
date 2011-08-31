@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -38,7 +38,9 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">vtkDeformationModel Class Reference</div>  </div>
@@ -54,18 +56,24 @@ Inheritance diagram for vtkDeformationModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkDeformationModel__inherit__graph.png" border="0" usemap="#vtkDeformationModel_inherit__map" alt="Inheritance graph"/></div>
 <map name="vtkDeformationModel_inherit__map" id="vtkDeformationModel_inherit__map">
-<area shape="rect" id="node5" href="classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="5,166,123,197"/><area shape="rect" id="node7" href="classvtkPSSInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="147,166,261,197"/><area shape="rect" id="node2" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="95,6,172,37"/></map>
+<area shape="rect" id="node5" href="classvtkCUDAParticleSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="5,166,221,197"/><area shape="rect" id="node7" href="classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="245,166,363,197"/><area shape="rect" id="node9" href="classvtkParticleSpringSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="387,166,603,197"/><area shape="rect" id="node2" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="265,6,343,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for vtkDeformationModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkDeformationModel__coll__graph.png" border="0" usemap="#vtkDeformationModel_coll__map" alt="Collaboration graph"/></div>
 <map name="vtkDeformationModel_coll__map" id="vtkDeformationModel_coll__map">
-<area shape="rect" id="node2" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="5,6,83,37"/><area shape="rect" id="node4" href="classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="107,6,320,37"/><area shape="rect" id="node6" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions." alt="" coords="344,6,493,37"/></map>
+<area shape="rect" id="node2" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="5,6,83,37"/><area shape="rect" id="node4" href="classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="107,6,320,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classvtkDeformationModel-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModelType</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool type definitiion. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModelStatus</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of model status. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca9d27953c888b1c9d1c0ff56e81c24e"></a><!-- doxytag: member="vtkDeformationModel::vtkTypeRevisionMacro" ref="aca9d27953c888b1c9d1c0ff56e81c24e" args="(vtkDeformationModel, vtkModel)" -->
@@ -79,86 +87,450 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Print class values. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a85f6d18112e8f0b0af30ed39791f8826">Init</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the deformation model.  <a href="#a85f6d18112e8f0b0af30ed39791f8826"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a11b344d86c11b4fe210f4a7e368c6811">SetCollisions</a> (<a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *collisions)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the detected collisions.  <a href="#a11b344d86c11b4fe210f4a7e368c6811"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a595d904d8937bd9550983ad819bced9f">GetCollisions</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the detected contacts.  <a href="#a595d904d8937bd9550983ad819bced9f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#ac4332efec0d62c00e7b891224b3c49a4">AddCollision</a> (<a class="el" href="classvtkCollision.html">vtkCollision</a> *c)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a collision to the model.  <a href="#ac4332efec0d62c00e7b891224b3c49a4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a5983b3efd71a5a2d9245898b1759ecf2">RemoveCollision</a> (vtkIdType id)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the collision at the specified id.  <a href="#a5983b3efd71a5a2d9245898b1759ecf2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a871763f657f374a5a282c941cb681190">RemoveAllCollisions</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all collisions from the model.  <a href="#a871763f657f374a5a282c941cb681190"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a7f6f01b29675776c80104093767b3e16">InsertNextBoundaryCondition</a> (<a class="el" href="classvtkBoundaryCondition.html">vtkBoundaryCondition</a> *condition)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a condition into the deformation model.  <a href="#a7f6f01b29675776c80104093767b3e16"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a2689259eba2d3bb2a24c20cdde3c2df6">InsertBoundaryConditions</a> (<a class="el" href="classvtkBoundaryConditionCollection.html">vtkBoundaryConditionCollection</a> *collection)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a collection of conditions into the deformation model.  <a href="#a2689259eba2d3bb2a24c20cdde3c2df6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a124c9245f936dcb332d260f51baea965">RemoveBoundaryConditions</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove conditions of the deformation model.  <a href="#a124c9245f936dcb332d260f51baea965"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6daa3130838e68ed384383172e598f91"></a><!-- doxytag: member="vtkDeformationModel::SetGravity" ref="a6daa3130838e68ed384383172e598f91" args="(double, double, double)" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a6daa3130838e68ed384383172e598f91">SetGravity</a> (double, double, double)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Gravity Force (m/s2) <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4df2d92fe9918bee2c8738d4e31a729"></a><!-- doxytag: member="vtkDeformationModel::GetGravity" ref="ae4df2d92fe9918bee2c8738d4e31a729" args="()" -->
 virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#ae4df2d92fe9918bee2c8738d4e31a729">GetGravity</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Gravity Force (m/s2) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#ad6c1b6def9f5d71c0aeb7d33fef743f5">AddDisplacement</a> (vtkIdType pointId, double *vector)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a displacement to the model.  <a href="#ad6c1b6def9f5d71c0aeb7d33fef743f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a7f6f01b29675776c80104093767b3e16">InsertNextBoundaryCondition</a> (<a class="el" href="classvtkBoundaryCondition.html">vtkBoundaryCondition</a> *condition)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a condition into the deformation model.  <a href="#a7f6f01b29675776c80104093767b3e16"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a2689259eba2d3bb2a24c20cdde3c2df6">InsertBoundaryConditions</a> (<a class="el" href="classvtkBoundaryConditionCollection.html">vtkBoundaryConditionCollection</a> *collection)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a collection of conditions into the deformation model.  <a href="#a2689259eba2d3bb2a24c20cdde3c2df6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a124c9245f936dcb332d260f51baea965">RemoveBoundaryConditions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove conditions of the deformation model.  <a href="#a124c9245f936dcb332d260f51baea965"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeac3fb870a4c3f9e196d1be3bc509eea"></a><!-- doxytag: member="vtkDeformationModel::vtkTypeRevisionMacro" ref="aeac3fb870a4c3f9e196d1be3bc509eea" args="(vtkModel, vtkPolyDataAlgorithm)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aeac3fb870a4c3f9e196d1be3bc509eea">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkModel.html">vtkModel</a>, vtkPolyDataAlgorithm)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6d654a42634818a295c4340737bfd28e">SetId</a> (vtkIdType)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model id.  <a href="#a6d654a42634818a295c4340737bfd28e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a7f311b9904a7164a742d468dac19b69f">GetId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model id.  <a href="#a7f311b9904a7164a742d468dac19b69f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a3084d9093ae6c6cfb769d3c5fe654317">SetObjectId</a> (int)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the object id of the model.  <a href="#a3084d9093ae6c6cfb769d3c5fe654317"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a933d94b0366783a5cf7c6007d9af73e2"></a><!-- doxytag: member="vtkDeformationModel::GetObjectId" ref="a933d94b0366783a5cf7c6007d9af73e2" args="()" -->
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a933d94b0366783a5cf7c6007d9af73e2">GetObjectId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the object id of the model. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a662b5b8eaf63929ece5af9ee6387ae8d">SetModelType</a> (<a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model type.  <a href="#a662b5b8eaf63929ece5af9ee6387ae8d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a71769995a4a3560e6b80ce636587de90">GetModelType</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model type.  <a href="#a71769995a4a3560e6b80ce636587de90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4b4c6445f788d5364abf9bbb87411953">SetStatus</a> (<a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the model state.  <a href="#a4b4c6445f788d5364abf9bbb87411953"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aec03f4aabb12110bacae93892aa983aa">GetStatus</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the model.  <a href="#aec03f4aabb12110bacae93892aa983aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad69b6b1e2cfbb35ef5d7f3dc2528674f">SetName</a> (const char *)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model name.  <a href="#ad69b6b1e2cfbb35ef5d7f3dc2528674f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4c3c94274d40b5e1365955ca16049d6b">GetName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model name.  <a href="#a4c3c94274d40b5e1365955ca16049d6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a9a2ef2c36899bdda11e31eb5d4e24f4d">SetFileName</a> (const char *)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model filename.  <a href="#a9a2ef2c36899bdda11e31eb5d4e24f4d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a8921166549bd7464fc16ef5dab6d39f4">GetFileName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model filename.  <a href="#a8921166549bd7464fc16ef5dab6d39f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44899bfd96db02a3b2464555ca527c58"></a><!-- doxytag: member="vtkDeformationModel::SetColor" ref="a44899bfd96db02a3b2464555ca527c58" args="(double, double, double)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a44899bfd96db02a3b2464555ca527c58">SetColor</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model mesh color. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade17120a7694cc43d8334a2f8b3c08c6"></a><!-- doxytag: member="vtkDeformationModel::GetColor" ref="ade17120a7694cc43d8334a2f8b3c08c6" args="()" -->
+virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ade17120a7694cc43d8334a2f8b3c08c6">GetColor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model mesh color. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a18911f1446e0fa6812dff406a37660db">SetOpacity</a> (double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model opacity.  <a href="#a18911f1446e0fa6812dff406a37660db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a42a2d686d009f500942918ff34b1079d">GetOpacity</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model opacity.  <a href="#a42a2d686d009f500942918ff34b1079d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ab45dc20e53a7ec4a69354fa72555143a">SetVisibility</a> (bool)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model visibility.  <a href="#ab45dc20e53a7ec4a69354fa72555143a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba">GetVisibility</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model visibilty.  <a href="#aa6b6113945209a6c73f9e97f2a27a7ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a47d72a8c7956c76135623c9cc4dbd3"></a><!-- doxytag: member="vtkDeformationModel::SetMatrix" ref="a2a47d72a8c7956c76135623c9cc4dbd3" args="(vtkMatrix4x4 *m)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a2a47d72a8c7956c76135623c9cc4dbd3">SetMatrix</a> (vtkMatrix4x4 *m)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transform matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a10d39b2362692d9ccbabe4a2121debb1">GetMatrix</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform matrix.  <a href="#a10d39b2362692d9ccbabe4a2121debb1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkPolyDataMapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a624671fcc4c316e83e898fbd677b6de3">GetMapper</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dataset mapper.  <a href="#a624671fcc4c316e83e898fbd677b6de3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a597ec136e0adf0087cb67b0ccf3a8d6a">GetActor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model actor.  <a href="#a597ec136e0adf0087cb67b0ccf3a8d6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ab9b0173e4f749c48d10b3bb6462b6dc6">SetSource</a> (vtkPolyData *source)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the source object for mesh synchronization purposes.  <a href="#ab9b0173e4f749c48d10b3bb6462b6dc6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual vtkPolyData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6fc61279c4eda328749115ba97e6a543">GetSource</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the source object for mesh synchronization purposes.  <a href="#a6fc61279c4eda328749115ba97e6a543"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46cc105555b7f22c0fa69c012a784a0e"></a><!-- doxytag: member="vtkDeformationModel::GetHashMap" ref="a46cc105555b7f22c0fa69c012a784a0e" args="()" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a46cc105555b7f22c0fa69c012a784a0e">GetHashMap</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get synchronization hash map. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ae8e4dab5943d1d5e9b9a6a4c92244795">Hide</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario model.  <a href="#ae8e4dab5943d1d5e9b9a6a4c92244795"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad14571234eddfb65c0b6c76e421ce9ec">Show</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display model.  <a href="#ad14571234eddfb65c0b6c76e421ce9ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a09e7fea03b1111b43b401f49027aff23">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable model.  <a href="#a09e7fea03b1111b43b401f49027aff23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1be31fd4cfe2397c39376a1431bad6b2">Disable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable model.  <a href="#a1be31fd4cfe2397c39376a1431bad6b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a20b3c3f7cb50a1757d70e9e05cfa2f03">IsVisible</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is visible.  <a href="#a20b3c3f7cb50a1757d70e9e05cfa2f03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a9fe9a9c6adfb9323fe273f9558973337">IsHidden</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is hidden.  <a href="#a9fe9a9c6adfb9323fe273f9558973337"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4c38af189c7cba56bf47753018b9da24">IsDisabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if model is disabled.  <a href="#a4c38af189c7cba56bf47753018b9da24"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2845a009aaad5e8dec4b17eea4671b5"></a><!-- doxytag: member="vtkDeformationModel::IsInitialized" ref="ad2845a009aaad5e8dec4b17eea4671b5" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad2845a009aaad5e8dec4b17eea4671b5">IsInitialized</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object has been initialized. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b268bb0c9f1c5f5adad1f4a306b8d14"></a><!-- doxytag: member="vtkDeformationModel::New" ref="a6b268bb0c9f1c5f5adad1f4a306b8d14" args="()" -->
+static <a class="el" href="classvtkModel.html">vtkModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6b268bb0c9f1c5f5adad1f4a306b8d14">New</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new model that will be used as a data container. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdbf0d9ff6124aaca34622cf7598bf8d"></a><!-- doxytag: member="vtkDeformationModel::Gravity" ref="afdbf0d9ff6124aaca34622cf7598bf8d" args="[3]" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#afdbf0d9ff6124aaca34622cf7598bf8d">Gravity</a> [3]</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravitation force. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a2ed9a8f7a3e63112a2659a74d663bb19">Collisions</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model collisions.  <a href="#a2ed9a8f7a3e63112a2659a74d663bb19"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkBoundaryConditionCollection.html">vtkBoundaryConditionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkDeformationModel.html#a13f84dbefd3ab252b765cdac0d255994">BoundaryConditions</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Boundary conditions.  <a href="#a13f84dbefd3ab252b765cdac0d255994"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10fd63a3ff5634d901d0e0918ef28d4e"></a><!-- doxytag: member="vtkDeformationModel::Id" ref="a10fd63a3ff5634d901d0e0918ef28d4e" args="" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a10fd63a3ff5634d901d0e0918ef28d4e">Id</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0c75a0ce0eab23fa76ce44b384ad872"></a><!-- doxytag: member="vtkDeformationModel::ObjectId" ref="ad0c75a0ce0eab23fa76ce44b384ad872" args="" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad0c75a0ce0eab23fa76ce44b384ad872">ObjectId</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59cb322ae414e875da90cdbc5a80a5a3"></a><!-- doxytag: member="vtkDeformationModel::Name" ref="a59cb322ae414e875da90cdbc5a80a5a3" args="" -->
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a59cb322ae414e875da90cdbc5a80a5a3">Name</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model name. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38269072db1af1a10e8fca14f35df81d"></a><!-- doxytag: member="vtkDeformationModel::Status" ref="a38269072db1af1a10e8fca14f35df81d" args="" -->
+<a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModelStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a38269072db1af1a10e8fca14f35df81d">Status</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model Status. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac995b232c1fe32aad1d304b677724a97"></a><!-- doxytag: member="vtkDeformationModel::FileName" ref="ac995b232c1fe32aad1d304b677724a97" args="" -->
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ac995b232c1fe32aad1d304b677724a97">FileName</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">model data file name <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5e21bd1a69099cdcbc288070225c08"></a><!-- doxytag: member="vtkDeformationModel::Reader" ref="a0e5e21bd1a69099cdcbc288070225c08" args="" -->
+vtkXMLPolyDataReader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a0e5e21bd1a69099cdcbc288070225c08">Reader</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model data file reader. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3514ed8406b87b30c8fc658e9415889d"></a><!-- doxytag: member="vtkDeformationModel::Matrix" ref="a3514ed8406b87b30c8fc658e9415889d" args="" -->
+vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a3514ed8406b87b30c8fc658e9415889d">Matrix</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform Matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29f3febd9f5cefd0728253258a067d95"></a><!-- doxytag: member="vtkDeformationModel::SmoothFilter" ref="a29f3febd9f5cefd0728253258a067d95" args="" -->
+vtkSmoothPolyDataFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a29f3febd9f5cefd0728253258a067d95">SmoothFilter</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Smoothing filter. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacaf6442be40c41fa60f68b66cb295cb"></a><!-- doxytag: member="vtkDeformationModel::Mapper" ref="aacaf6442be40c41fa60f68b66cb295cb" args="" -->
+vtkPolyDataMapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aacaf6442be40c41fa60f68b66cb295cb">Mapper</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">DataSetMapper of the model actor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae27db2cce60d26ee186c96c2aacc1d"></a><!-- doxytag: member="vtkDeformationModel::Actor" ref="abae27db2cce60d26ee186c96c2aacc1d" args="" -->
+vtkActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#abae27db2cce60d26ee186c96c2aacc1d">Actor</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool piece actor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad888347e8a3c6041d1cf43cea91079d2"></a><!-- doxytag: member="vtkDeformationModel::HashMap" ref="ad888347e8a3c6041d1cf43cea91079d2" args="" -->
+vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad888347e8a3c6041d1cf43cea91079d2">HashMap</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronization HashMap. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dae40c93973f421d49360eaf969a9f3"></a><!-- doxytag: member="vtkDeformationModel::Initialized" ref="a1dae40c93973f421d49360eaf969a9f3" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1dae40c93973f421d49360eaf969a9f3">Initialized</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model initialization flag. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData).">vtkDeformationModel</a> object defines a deformation model based on a mesh (vtkPolyData). </p>
 <p>This class inherits from <a class="el" href="classvtkModel.html" title="This class represents an abstract model on a scenario element.">vtkModel</a> base class. As it is specified in <a class="el" href="classvtkModel.html" title="This class represents an abstract model on a scenario element.">vtkModel</a>, at least an input mesh should be defined. Optionally a source mesh for synchronization purposes may be defined. An interface based on this class must be implemented to access available deformation models: <a class="el" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>, vtkExplicitDeformableModel, etc... </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac4332efec0d62c00e7b891224b3c49a4"></a><!-- doxytag: member="vtkDeformationModel::AddCollision" ref="ac4332efec0d62c00e7b891224b3c49a4" args="(vtkCollision *c)" -->
+<a class="anchor" id="ad6c1b6def9f5d71c0aeb7d33fef743f5"></a><!-- doxytag: member="vtkDeformationModel::AddDisplacement" ref="ad6c1b6def9f5d71c0aeb7d33fef743f5" args="(vtkIdType pointId, double *vector)=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkDeformationModel::AddCollision </td>
+          <td class="memname">virtual void vtkDeformationModel::AddDisplacement </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvtkCollision.html">vtkCollision</a> *&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"><em>pointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Add a collision to the model. </p>
-<p>Add a single collision to the model. Previously added collisions are kept. </p>
+<p>Add a displacement to the model. </p>
+<p>Pure virtual method. Must be implemented in inheriting classes. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>collision to be added </td></tr>
+    <tr><td class="paramname">pointId</td><td>point identifier </td></tr>
+    <tr><td class="paramname">vector</td><td>displacement vector </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkDeformationModel.html#a5983b3efd71a5a2d9245898b1759ecf2" title="Remove the collision at the specified id.">RemoveCollision(vtkIdType id)</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classvtkCUDAParticleSystemInterface.html#a85317c4bc0acac57ba2447a9d193c6ef">vtkCUDAParticleSystemInterface</a>, <a class="el" href="classvtkEDMInterface.html#abdd454fbbb3ef5597686fc27eae869e4">vtkEDMInterface</a>, and <a class="el" href="classvtkParticleSpringSystemInterface.html#ad25414beb97ed80307c208f708da4c6e">vtkParticleSpringSystemInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a595d904d8937bd9550983ad819bced9f"></a><!-- doxytag: member="vtkDeformationModel::GetCollisions" ref="a595d904d8937bd9550983ad819bced9f" args="()" -->
+<a class="anchor" id="a1be31fd4cfe2397c39376a1431bad6b2"></a><!-- doxytag: member="vtkDeformationModel::Disable" ref="a1be31fd4cfe2397c39376a1431bad6b2" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> * vtkDeformationModel::GetCollisions </td>
+          <td class="memname">void vtkModel::Disable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Get the detected contacts. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>collection of collisions </dd></dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkDeformationModel.html#a11b344d86c11b4fe210f4a7e368c6811" title="Set the detected collisions.">SetCollisions(vtkCollisionCollection * collisions)</a> </dd></dl>
+<p>Disable model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a09e7fea03b1111b43b401f49027aff23"></a><!-- doxytag: member="vtkDeformationModel::Enable" ref="a09e7fea03b1111b43b401f49027aff23" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a597ec136e0adf0087cb67b0ccf3a8d6a"></a><!-- doxytag: member="vtkDeformationModel::GetActor" ref="a597ec136e0adf0087cb67b0ccf3a8d6a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkActor * vtkModel::GetActor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model actor. </p>
+<p>The model actor will be used for displaying purposes </p>
+
+</div>
+</div>
+<a class="anchor" id="a8921166549bd7464fc16ef5dab6d39f4"></a><!-- doxytag: member="vtkDeformationModel::GetFileName" ref="a8921166549bd7464fc16ef5dab6d39f4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char* vtkModel::GetFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model filename. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a9a2ef2c36899bdda11e31eb5d4e24f4d" title="Assign model filename.">SetFileName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f311b9904a7164a742d468dac19b69f"></a><!-- doxytag: member="vtkDeformationModel::GetId" ref="a7f311b9904a7164a742d468dac19b69f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual vtkIdType vtkModel::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model id. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>SetInput(vtkIdType) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a624671fcc4c316e83e898fbd677b6de3"></a><!-- doxytag: member="vtkDeformationModel::GetMapper" ref="a624671fcc4c316e83e898fbd677b6de3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkPolyDataMapper * vtkModel::GetMapper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get dataset mapper. </p>
+<p>Dataset mapper of the model actor </p>
+
+</div>
+</div>
+<a class="anchor" id="a10d39b2362692d9ccbabe4a2121debb1"></a><!-- doxytag: member="vtkDeformationModel::GetMatrix" ref="a10d39b2362692d9ccbabe4a2121debb1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkMatrix4x4 * vtkModel::GetMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get transform matrix. </p>
+<p>Transformation matrix for displaying purposes </p>
+
+</div>
+</div>
+<a class="anchor" id="a71769995a4a3560e6b80ce636587de90"></a><!-- doxytag: member="vtkDeformationModel::GetModelType" ref="a71769995a4a3560e6b80ce636587de90" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a> vtkModel::GetModelType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a662b5b8eaf63929ece5af9ee6387ae8d" title="Set model type.">SetModelType(vtkModelType)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c3c94274d40b5e1365955ca16049d6b"></a><!-- doxytag: member="vtkDeformationModel::GetName" ref="a4c3c94274d40b5e1365955ca16049d6b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char* vtkModel::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return model name. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#ad69b6b1e2cfbb35ef5d7f3dc2528674f" title="Assign model name.">SetName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42a2d686d009f500942918ff34b1079d"></a><!-- doxytag: member="vtkDeformationModel::GetOpacity" ref="a42a2d686d009f500942918ff34b1079d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double vtkModel::GetOpacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model opacity. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a18911f1446e0fa6812dff406a37660db" title="Set model opacity.">SetOpacity(double)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fc61279c4eda328749115ba97e6a543"></a><!-- doxytag: member="vtkDeformationModel::GetSource" ref="a6fc61279c4eda328749115ba97e6a543" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkPolyData * vtkModel::GetSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the source object for mesh synchronization purposes. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#ab9b0173e4f749c48d10b3bb6462b6dc6" title="Specify the source object for mesh synchronization purposes.">SetSource(vtkPolyData *)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec03f4aabb12110bacae93892aa983aa"></a><!-- doxytag: member="vtkDeformationModel::GetStatus" ref="aec03f4aabb12110bacae93892aa983aa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a> vtkModel::GetStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the state of the model. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a4b4c6445f788d5364abf9bbb87411953" title="Assign the model state.">SetStatus(vtkModelStatus)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa6b6113945209a6c73f9e97f2a27a7ba"></a><!-- doxytag: member="vtkDeformationModel::GetVisibility" ref="aa6b6113945209a6c73f9e97f2a27a7ba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkModel::GetVisibility </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get model visibilty. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba" title="Get model visibilty.">GetVisibility()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8e4dab5943d1d5e9b9a6a4c92244795"></a><!-- doxytag: member="vtkDeformationModel::Hide" ref="ae8e4dab5943d1d5e9b9a6a4c92244795" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Hide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hide scenario model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
 </div>
@@ -186,7 +558,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 <p>Reimplemented from <a class="el" href="classvtkModel.html#a4ba6baa6891f8ee482e908fd74330514">vtkModel</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classvtkEDMInterface.html#a39db04e4435630c70ae55e5a810b15b3">vtkEDMInterface</a>, and <a class="el" href="classvtkPSSInterface.html#ab34018d4e2ba1ed910637ac5eb6ec154">vtkPSSInterface</a>.</p>
+<p>Reimplemented in <a class="el" href="classvtkCUDAParticleSystemInterface.html#abf1c273c66e830e34a8af896ad650a5f">vtkCUDAParticleSystemInterface</a>, <a class="el" href="classvtkEDMInterface.html#a39db04e4435630c70ae55e5a810b15b3">vtkEDMInterface</a>, and <a class="el" href="classvtkParticleSpringSystemInterface.html#a773e6cd402024058c1517c4c24e73959">vtkParticleSpringSystemInterface</a>.</p>
 
 </div>
 </div>
@@ -244,22 +616,74 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a871763f657f374a5a282c941cb681190"></a><!-- doxytag: member="vtkDeformationModel::RemoveAllCollisions" ref="a871763f657f374a5a282c941cb681190" args="()" -->
+<a class="anchor" id="a4c38af189c7cba56bf47753018b9da24"></a><!-- doxytag: member="vtkDeformationModel::IsDisabled" ref="a4c38af189c7cba56bf47753018b9da24" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkDeformationModel::RemoveAllCollisions </td>
+          <td class="memname">bool vtkModel::IsDisabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [inline, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Remove all collisions from the model. </p>
-<p>All previously defined collisions are removed from the model. Collision collection object is not deleted. </p>
+<p>Check if model is disabled. </p>
+<p>When an model is disabled it will NOT:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a9fe9a9c6adfb9323fe273f9558973337"></a><!-- doxytag: member="vtkDeformationModel::IsHidden" ref="a9fe9a9c6adfb9323fe273f9558973337" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkModel::IsHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if model is hidden. </p>
+<p>When an model is disabled it will NOT:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection. It will be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a20b3c3f7cb50a1757d70e9e05cfa2f03"></a><!-- doxytag: member="vtkDeformationModel::IsVisible" ref="a20b3c3f7cb50a1757d70e9e05cfa2f03" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkModel::IsVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if model is visible. </p>
+<p>When an model is disabled it will:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
 
 </div>
 </div>
@@ -282,57 +706,203 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a5983b3efd71a5a2d9245898b1759ecf2"></a><!-- doxytag: member="vtkDeformationModel::RemoveCollision" ref="a5983b3efd71a5a2d9245898b1759ecf2" args="(vtkIdType id)" -->
+<a class="anchor" id="a9a2ef2c36899bdda11e31eb5d4e24f4d"></a><!-- doxytag: member="vtkDeformationModel::SetFileName" ref="a9a2ef2c36899bdda11e31eb5d4e24f4d" args="(const char *)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkDeformationModel::RemoveCollision </td>
+          <td class="memname">virtual void vtkModel::SetFileName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign model filename. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a8921166549bd7464fc16ef5dab6d39f4" title="Return model filename.">GetFileName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d654a42634818a295c4340737bfd28e"></a><!-- doxytag: member="vtkDeformationModel::SetId" ref="a6d654a42634818a295c4340737bfd28e" args="(vtkIdType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetId </td>
           <td>(</td>
           <td class="paramtype">vtkIdType&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Remove the collision at the specified id. </p>
-<p>Remove a single collision from the model at the specified id </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>collision identifier </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkDeformationModel.html#ac4332efec0d62c00e7b891224b3c49a4" title="Add a collision to the model.">AddCollision(vtkCollision * c)</a> </dd></dl>
+<p>Set model id. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtkIdType <a class="el" href="classvtkModel.html#a7f311b9904a7164a742d468dac19b69f" title="Return model id.">GetId()</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a11b344d86c11b4fe210f4a7e368c6811"></a><!-- doxytag: member="vtkDeformationModel::SetCollisions" ref="a11b344d86c11b4fe210f4a7e368c6811" args="(vtkCollisionCollection *collisions)" -->
+<a class="anchor" id="a662b5b8eaf63929ece5af9ee6387ae8d"></a><!-- doxytag: member="vtkDeformationModel::SetModelType" ref="a662b5b8eaf63929ece5af9ee6387ae8d" args="(vtkModel::vtkModelType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkDeformationModel::SetCollisions </td>
+          <td class="memname">virtual void vtkModel::SetModelType </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td>
-          <td class="paramname"><em>collisions</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classvtkModel.html#ad813a6979a410a2b8fe6aa165f0bc4ac">vtkModel::vtkModelType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Set the detected collisions. </p>
-<p>Set a collection of collisions to the model. Any collision previously added will be removed. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">collisions</td><td>collection of collisions </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions.">vtkCollisionCollection</a> * <a class="el" href="classvtkDeformationModel.html#a595d904d8937bd9550983ad819bced9f" title="Get the detected contacts.">GetCollisions()</a> </dd></dl>
+<p>Set model type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtlModelType <a class="el" href="classvtkModel.html#a71769995a4a3560e6b80ce636587de90" title="Return model type.">GetModelType()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad69b6b1e2cfbb35ef5d7f3dc2528674f"></a><!-- doxytag: member="vtkDeformationModel::SetName" ref="ad69b6b1e2cfbb35ef5d7f3dc2528674f" args="(const char *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign model name. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a4c3c94274d40b5e1365955ca16049d6b" title="Return model name.">GetName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3084d9093ae6c6cfb769d3c5fe654317"></a><!-- doxytag: member="vtkDeformationModel::SetObjectId" ref="a3084d9093ae6c6cfb769d3c5fe654317" args="(int)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetObjectId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the object id of the model. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>int <a class="el" href="classvtkModel.html#a933d94b0366783a5cf7c6007d9af73e2" title="Get the object id of the model.">GetObjectId()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18911f1446e0fa6812dff406a37660db"></a><!-- doxytag: member="vtkDeformationModel::SetOpacity" ref="a18911f1446e0fa6812dff406a37660db" args="(double)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetOpacity </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model opacity. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#a42a2d686d009f500942918ff34b1079d" title="Get model opacity.">GetOpacity()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9b0173e4f749c48d10b3bb6462b6dc6"></a><!-- doxytag: member="vtkDeformationModel::SetSource" ref="ab9b0173e4f749c48d10b3bb6462b6dc6" args="(vtkPolyData *source)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::SetSource </td>
+          <td>(</td>
+          <td class="paramtype">vtkPolyData *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Specify the source object for mesh synchronization purposes. </p>
+<p>This is an optional input. If source is set, the model primary mesh will be synchronized to this source mesh whenever a change is made on it. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>vtkPolyData* <a class="el" href="classvtkModel.html#a6fc61279c4eda328749115ba97e6a543" title="Return the source object for mesh synchronization purposes.">GetSource()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b4c6445f788d5364abf9bbb87411953"></a><!-- doxytag: member="vtkDeformationModel::SetStatus" ref="a4b4c6445f788d5364abf9bbb87411953" args="(vtkModel::vtkModelStatus)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkModel.html#accf7bcb1609c90c696774dccea7896ba">vtkModel::vtkModelStatus</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign the model state. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#aec03f4aabb12110bacae93892aa983aa" title="Returns the state of the model.">GetStatus()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab45dc20e53a7ec4a69354fa72555143a"></a><!-- doxytag: member="vtkDeformationModel::SetVisibility" ref="ab45dc20e53a7ec4a69354fa72555143a" args="(bool)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkModel::SetVisibility </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set model visibility. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>double <a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba" title="Get model visibilty.">GetVisibility()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad14571234eddfb65c0b6c76e421ce9ec"></a><!-- doxytag: member="vtkDeformationModel::Show" ref="ad14571234eddfb65c0b6c76e421ce9ec" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Show/Display model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
 </div>
@@ -353,28 +923,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a2ed9a8f7a3e63112a2659a74d663bb19"></a><!-- doxytag: member="vtkDeformationModel::Collisions" ref="a2ed9a8f7a3e63112a2659a74d663bb19" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a>* <a class="el" href="classvtkDeformationModel.html#a2ed9a8f7a3e63112a2659a74d663bb19">vtkDeformationModel::Collisions</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Model collisions. </p>
-<p>This acts as pointer to the deformation model collection of collisions </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>BioMechanics/<a class="el" href="vtkDeformationModel_8h_source.html">vtkDeformationModel.h</a></li>
 <li>BioMechanics/vtkDeformationModel.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

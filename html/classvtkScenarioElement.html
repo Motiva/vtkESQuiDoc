@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -57,7 +57,7 @@ Collaboration diagram for vtkScenarioElement:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkScenarioElement__coll__graph.png" border="0" usemap="#vtkScenarioElement_coll__map" alt="Collaboration graph"/></div>
 <map name="vtkScenarioElement_coll__map" id="vtkScenarioElement_coll__map">
-<area shape="rect" id="node2" href="classvtkModelCollection.html" title="Collection of scenario object models." alt="" coords="5,105,141,135"/><area shape="rect" id="node4" href="classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData)" alt="" coords="165,105,317,135"/><area shape="rect" id="node6" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="283,6,360,37"/><area shape="rect" id="node8" href="classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="493,105,643,135"/><area shape="rect" id="node15" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData)." alt="" coords="341,105,469,135"/><area shape="rect" id="node11" href="classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="557,6,771,37"/><area shape="rect" id="node13" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions." alt="" coords="384,6,533,37"/></map>
+<area shape="rect" id="node2" href="classvtkModelCollection.html" title="Collection of scenario object models." alt="" coords="5,105,141,135"/><area shape="rect" id="node4" href="classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData)" alt="" coords="317,105,469,135"/><area shape="rect" id="node6" href="classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="355,6,432,37"/><area shape="rect" id="node8" href="classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="493,105,643,135"/><area shape="rect" id="node13" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData)." alt="" coords="165,105,293,135"/><area shape="rect" id="node11" href="classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="461,6,675,37"/><area shape="rect" id="node16" href="classvtkCollisionCollection.html" title="Implementation of a collection of collisions." alt="" coords="155,6,304,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classvtkScenarioElement-members.html">List of all members.</a></p>
@@ -103,27 +103,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign Element name.  <a href="#a15beede8d7a1cb7b31f10d173cda487d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a316fd16a5a7db397ca6c7183894ac6e4">GetName</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Element scale.  <a href="#a316fd16a5a7db397ca6c7183894ac6e4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a3ba6dadafd2fd808d7a01e0b67b9c167">SetScale</a> (double, double, double)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign Element scale.  <a href="#a3ba6dadafd2fd808d7a01e0b67b9c167"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a55814204b798e99441b41105ab342a6b">GetScale</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Element scale.  <a href="#a55814204b798e99441b41105ab342a6b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#aeb8986c2ed52cff97351f52458ca0c14">SetDeltaT</a> (double)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign simulation time step.  <a href="#aeb8986c2ed52cff97351f52458ca0c14"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a9ce6ee24d947d6121b8acd54326e9996">GetDeltaT</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return simulation time step.  <a href="#a9ce6ee24d947d6121b8acd54326e9996"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a3ba6dadafd2fd808d7a01e0b67b9c167">SetScale</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign element scale.  <a href="#a3ba6dadafd2fd808d7a01e0b67b9c167"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a55814204b798e99441b41105ab342a6b">GetScale</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return element scale.  <a href="#a55814204b798e99441b41105ab342a6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a7c48e300fe28c9d0e788aa660f3cbbaa">SetOrigin</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element origin Point.  <a href="#a7c48e300fe28c9d0e788aa660f3cbbaa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a323fb7527348a561d46f997a20f555d6">GetOrigin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the object origin Point.  <a href="#a323fb7527348a561d46f997a20f555d6"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element origin Point.  <a href="#a323fb7527348a561d46f997a20f555d6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a082bc62dbcb31cf640eb97fe82db8ce6">SetOrientation</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set element orientation angles.  <a href="#a082bc62dbcb31cf640eb97fe82db8ce6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a70299762216c349e68ccfadc9cf3a8ec">GetOrientation</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object orientation angles. (yaw, pitch, roll) (WXYZ)  <a href="#a70299762216c349e68ccfadc9cf3a8ec"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get element orientation angles. (yaw, pitch, roll) (WXYZ)  <a href="#a70299762216c349e68ccfadc9cf3a8ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ab4b205044739620983be98e554edf"></a><!-- doxytag: member="vtkScenarioElement::SetPosition" ref="ae4ab4b205044739620983be98e554edf" args="(double, double, double)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#ae4ab4b205044739620983be98e554edf">SetPosition</a> (double, double, double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the element position (WXYZ) <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7457301de947c9e2f875bc552ca5f781"></a><!-- doxytag: member="vtkScenarioElement::GetPosition" ref="a7457301de947c9e2f875bc552ca5f781" args="()" -->
 virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a7457301de947c9e2f875bc552ca5f781">GetPosition</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Object position (WXYZ) <br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element position (WXYZ) <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a803848725553a3182f85f0f877d5699e"></a><!-- doxytag: member="vtkScenarioElement::GetVelocity" ref="a803848725553a3182f85f0f877d5699e" args="()" -->
 virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a803848725553a3182f85f0f877d5699e">GetVelocity</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Object velocity (WXYZ) <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bb0c80c2663ddf1a4e4d91690b452c2"></a><!-- doxytag: member="vtkScenarioElement::GetDirection" ref="a7bb0c80c2663ddf1a4e4d91690b452c2" args="()" -->
-virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a7bb0c80c2663ddf1a4e4d91690b452c2">GetDirection</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the object direction unit vector (WXYZ) <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#aa36efcf22c8089959ed54fc1b685a55c">SetRenderWindow</a> (vtkRenderWindow *r)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the render window of the Element.  <a href="#aa36efcf22c8089959ed54fc1b685a55c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vtkRenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#aca01a7b1359ea867a67806fff5c0ec1f">GetRenderWindow</a> ()</td></tr>
@@ -166,12 +170,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario element.  <a href="#a33c809565ef3e97b67011b6a1c3b1e06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a0ec679d2e8c473437e1fffbcc50ce0ee">Show</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display element.  <a href="#a0ec679d2e8c473437e1fffbcc50ce0ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a25736834eeb707e5871949e382e83b9b">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable element.  <a href="#a25736834eeb707e5871949e382e83b9b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a4195beca3082a9be9d9a01469c1cde8b">Disable</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable element.  <a href="#a4195beca3082a9be9d9a01469c1cde8b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#aa4c42d934aab78b6f21d8ec831b41809">IsVisible</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element is visible.  <a href="#aa4c42d934aab78b6f21d8ec831b41809"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#ade0e90eef48d82c436cb013dbe744e38">IsHidden</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element is hidden.  <a href="#ade0e90eef48d82c436cb013dbe744e38"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a1154c76d0c34798dcbcf44b83525975d">IsEnabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element is enabled.  <a href="#a1154c76d0c34798dcbcf44b83525975d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#aac3bd64124e979b070bec65611c01f9a">IsDisabled</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if element is disabled.  <a href="#aac3bd64124e979b070bec65611c01f9a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a675614e5a96f2e015be81cc1f330c9d3"></a><!-- doxytag: member="vtkScenarioElement::IsInitialized" ref="a675614e5a96f2e015be81cc1f330c9d3" args="()" -->
@@ -216,8 +220,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a291b7437f2e9fb66a9a2b590ff27e221"></a><!-- doxytag: member="vtkScenarioElement::Models" ref="a291b7437f2e9fb66a9a2b590ff27e221" args="" -->
 <a class="el" href="classvtkModelCollection.html">vtkModelCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a291b7437f2e9fb66a9a2b590ff27e221">Models</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of models. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#ac6c85dc5aa8da539d2a509596477e546">Initialized</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision hash map.  <a href="#ac6c85dc5aa8da539d2a509596477e546"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6c85dc5aa8da539d2a509596477e546"></a><!-- doxytag: member="vtkScenarioElement::Initialized" ref="ac6c85dc5aa8da539d2a509596477e546" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#ac6c85dc5aa8da539d2a509596477e546">Initialized</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model initialization flag. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf2ad5717f6cf10e7ff1fa4bdb7cfaf5"></a><!-- doxytag: member="vtkScenarioElement::Origin" ref="adf2ad5717f6cf10e7ff1fa4bdb7cfaf5" args="[3]" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#adf2ad5717f6cf10e7ff1fa4bdb7cfaf5">Origin</a> [3]</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Origin point for transforms. <br/></td></tr>
@@ -242,6 +247,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d6401141b4171ac487cec199faaa01e"></a><!-- doxytag: member="vtkScenarioElement::Scale" ref="a2d6401141b4171ac487cec199faaa01e" args="[3]" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a2d6401141b4171ac487cec199faaa01e">Scale</a> [3]</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale factor (size) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab858853fa4d36f02ffb6b24876d08038"></a><!-- doxytag: member="vtkScenarioElement::Transform" ref="ab858853fa4d36f02ffb6b24876d08038" args="" -->
+vtkTransform *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#ab858853fa4d36f02ffb6b24876d08038">Transform</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Element transform. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29097f3e19a474218f075c5458855720"></a><!-- doxytag: member="vtkScenarioElement::Matrix" ref="a29097f3e19a474218f075c5458855720" args="" -->
+vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#a29097f3e19a474218f075c5458855720">Matrix</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformation Matrix. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc8761cb1a1bb53a4602865270809d8a"></a><!-- doxytag: member="vtkScenarioElement::RenderWindow" ref="afc8761cb1a1bb53a4602865270809d8a" args="" -->
 vtkRenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioElement.html#afc8761cb1a1bb53a4602865270809d8a">RenderWindow</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Render Window of the Element. <br/></td></tr>
@@ -269,6 +280,25 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="memdoc">
 
 <p>Disable element. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a25736834eeb707e5871949e382e83b9b"></a><!-- doxytag: member="vtkScenarioElement::Enable" ref="a25736834eeb707e5871949e382e83b9b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioElement::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable element. </p>
 <p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
@@ -425,7 +455,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div>
 <div class="memdoc">
 
-<p>Get object orientation angles. (yaw, pitch, roll) (WXYZ) </p>
+<p>Get element orientation angles. (yaw, pitch, roll) (WXYZ) </p>
 <p>(yaw, pitch, roll) (WXYZ) </p>
 
 </div>
@@ -444,7 +474,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div>
 <div class="memdoc">
 
-<p>Get the object origin Point. </p>
+<p>Get the element origin Point. </p>
 <p>Reference point where the rotation calculus are made </p>
 
 </div>
@@ -483,7 +513,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div>
 <div class="memdoc">
 
-<p>Return Element scale. </p>
+<p>Return element scale. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd>SetScale(double) </dd></dl>
 
 </div>
@@ -561,7 +591,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="memdoc">
 
 <p>Hide scenario element. </p>
-<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+<p>Hiding an element does not disable it for simulation purposes. Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
 </div>
@@ -608,12 +638,12 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<a class="anchor" id="ade0e90eef48d82c436cb013dbe744e38"></a><!-- doxytag: member="vtkScenarioElement::IsHidden" ref="ade0e90eef48d82c436cb013dbe744e38" args="()" -->
+<a class="anchor" id="a1154c76d0c34798dcbcf44b83525975d"></a><!-- doxytag: member="vtkScenarioElement::IsEnabled" ref="a1154c76d0c34798dcbcf44b83525975d" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool vtkScenarioElement::IsHidden </td>
+          <td class="memname">bool vtkScenarioElement::IsEnabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -622,31 +652,8 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div>
 <div class="memdoc">
 
-<p>Check if element is hidden. </p>
-<p>When an element is disabled it will NOT:</p>
-<ul>
-<li>be visible.</li>
-<li>be computed in collision detection. It will be used in simulation. </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="aa4c42d934aab78b6f21d8ec831b41809"></a><!-- doxytag: member="vtkScenarioElement::IsVisible" ref="aa4c42d934aab78b6f21d8ec831b41809" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool vtkScenarioElement::IsVisible </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Check if element is visible. </p>
-<p>When an element is disabled it will:</p>
+<p>Check if element is enabled. </p>
+<p>When an element is enabled it will:</p>
 <ul>
 <li>be visible.</li>
 <li>be computed in collision detection.</li>
@@ -942,6 +949,78 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
+<a class="anchor" id="a082bc62dbcb31cf640eb97fe82db8ce6"></a><!-- doxytag: member="vtkScenarioElement::SetOrientation" ref="a082bc62dbcb31cf640eb97fe82db8ce6" args="(double, double, double)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkScenarioElement::SetOrientation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set element orientation angles. </p>
+<p>(yaw, pitch, roll) (WXYZ) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7c48e300fe28c9d0e788aa660f3cbbaa"></a><!-- doxytag: member="vtkScenarioElement::SetOrigin" ref="a7c48e300fe28c9d0e788aa660f3cbbaa" args="(double, double, double)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkScenarioElement::SetOrigin </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the element origin Point. </p>
+<p>Reference point where the rotation calculus are made </p>
+
+</div>
+</div>
 <a class="anchor" id="aa36efcf22c8089959ed54fc1b685a55c"></a><!-- doxytag: member="vtkScenarioElement::SetRenderWindow" ref="aa36efcf22c8089959ed54fc1b685a55c" args="(vtkRenderWindow *r)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1000,8 +1079,8 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </div>
 <div class="memdoc">
 
-<p>Assign Element scale. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioElement.html#a55814204b798e99441b41105ab342a6b" title="Return Element scale.">GetScale()</a> </dd></dl>
+<p>Assign element scale. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioElement.html#a55814204b798e99441b41105ab342a6b" title="Return element scale.">GetScale()</a> </dd></dl>
 
 </div>
 </div>
@@ -1086,7 +1165,7 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="memdoc">
 
 <p>Show/Display element. </p>
-<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+<p>Showing an element does not enable it for simulation purposes. Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
 </div>
@@ -1159,30 +1238,13 @@ vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ac6c85dc5aa8da539d2a509596477e546"></a><!-- doxytag: member="vtkScenarioElement::Initialized" ref="ac6c85dc5aa8da539d2a509596477e546" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classvtkScenarioElement.html#ac6c85dc5aa8da539d2a509596477e546">vtkScenarioElement::Initialized</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Collision hash map. </p>
-<p>Deformation hash map Model initialization flag </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Scenario/<a class="el" href="vtkScenarioElement_8h_source.html">vtkScenarioElement.h</a></li>
 <li>CollisionDetection/vtkCollision.cxx</li>
 <li>Scenario/vtkScenarioElement.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

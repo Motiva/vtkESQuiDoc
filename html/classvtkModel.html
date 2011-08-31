@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -56,7 +56,7 @@ Inheritance diagram for vtkModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkModel__inherit__graph.png" border="0" usemap="#vtkModel_inherit__map" alt="Inheritance graph"/></div>
 <map name="vtkModel_inherit__map" id="vtkModel_inherit__map">
-<area shape="rect" id="node3" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData)." alt="" coords="5,86,133,117"/><area shape="rect" id="node5" href="classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="157,86,307,117"/><area shape="rect" id="node11" href="classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData)" alt="" coords="331,86,483,117"/><area shape="rect" id="node7" href="classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="103,166,220,197"/><area shape="rect" id="node9" href="classvtkPSSInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="244,166,359,197"/></map>
+<area shape="rect" id="node3" href="classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData)." alt="" coords="77,86,205,117"/><area shape="rect" id="node5" href="classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="229,86,379,117"/><area shape="rect" id="node13" href="classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData)" alt="" coords="403,86,555,117"/><area shape="rect" id="node7" href="classvtkCUDAParticleSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="5,166,221,197"/><area shape="rect" id="node9" href="classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="245,166,363,197"/><area shape="rect" id="node11" href="classvtkParticleSpringSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="387,166,603,197"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classvtkModel-members.html">List of all members.</a></p>
@@ -103,24 +103,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model filename.  <a href="#a9a2ef2c36899bdda11e31eb5d4e24f4d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a8921166549bd7464fc16ef5dab6d39f4">GetFileName</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model filename.  <a href="#a8921166549bd7464fc16ef5dab6d39f4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a8d62be86a3492ba746a3f8b26625b13a">SetScale</a> (double, double, double)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign model scale.  <a href="#a8d62be86a3492ba746a3f8b26625b13a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#accdbe4a31600bb01dbc3fba30ab8dabb">GetScale</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return model scale.  <a href="#accdbe4a31600bb01dbc3fba30ab8dabb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a2c7e5653c96813cce9f3646cd0d370f1">SetOrigin</a> (double, double, double)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the model origin Point.  <a href="#a2c7e5653c96813cce9f3646cd0d370f1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a7402a03b57a647ec41658048b6349a3b">GetOrigin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model origin Point.  <a href="#a7402a03b57a647ec41658048b6349a3b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a71825ad63988c40dfce2a9c67a048ad5">SetOrientation</a> (double, double, double)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model orientation angles.  <a href="#a71825ad63988c40dfce2a9c67a048ad5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a2c2ee22176dc608062194fe52eb8ae38">GetOrientation</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model orientation angles. (yaw, pitch, roll) (WXYZ)  <a href="#a2c2ee22176dc608062194fe52eb8ae38"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7764b02c3f4659726e4dc395d21e31a2"></a><!-- doxytag: member="vtkModel::SetPosition" ref="a7764b02c3f4659726e4dc395d21e31a2" args="(double, double, double)" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a7764b02c3f4659726e4dc395d21e31a2">SetPosition</a> (double, double, double)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the model position (WXYZ) <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e8f3127a6c1467368e17685560412c9"></a><!-- doxytag: member="vtkModel::GetPosition" ref="a6e8f3127a6c1467368e17685560412c9" args="()" -->
-virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6e8f3127a6c1467368e17685560412c9">GetPosition</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the model position (WXYZ) <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44899bfd96db02a3b2464555ca527c58"></a><!-- doxytag: member="vtkModel::SetColor" ref="a44899bfd96db02a3b2464555ca527c58" args="(double, double, double)" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a44899bfd96db02a3b2464555ca527c58">SetColor</a> (double, double, double)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model mesh color. <br/></td></tr>
@@ -135,8 +117,11 @@ virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set model visibility.  <a href="#ab45dc20e53a7ec4a69354fa72555143a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aa6b6113945209a6c73f9e97f2a27a7ba">GetVisibility</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model visibilty.  <a href="#aa6b6113945209a6c73f9e97f2a27a7ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">vtkTransform *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a6c902df3f7ec09b471589cbfc685e874">GetTransform</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform function.  <a href="#a6c902df3f7ec09b471589cbfc685e874"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a47d72a8c7956c76135623c9cc4dbd3"></a><!-- doxytag: member="vtkModel::SetMatrix" ref="a2a47d72a8c7956c76135623c9cc4dbd3" args="(vtkMatrix4x4 *m)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a2a47d72a8c7956c76135623c9cc4dbd3">SetMatrix</a> (vtkMatrix4x4 *m)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set transform matrix. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a10d39b2362692d9ccbabe4a2121debb1">GetMatrix</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform matrix.  <a href="#a10d39b2362692d9ccbabe4a2121debb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vtkPolyDataMapper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a624671fcc4c316e83e898fbd677b6de3">GetMapper</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dataset mapper.  <a href="#a624671fcc4c316e83e898fbd677b6de3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vtkActor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a597ec136e0adf0087cb67b0ccf3a8d6a">GetActor</a> ()</td></tr>
@@ -150,26 +135,12 @@ vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get synchronization hash map. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4ba6baa6891f8ee482e908fd74330514">Init</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual initialization function.  <a href="#a4ba6baa6891f8ee482e908fd74330514"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aa6f19c19e934fff23cfbd4d2edad60da">Translate</a> (double *vector)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the translation of the model (Local coordinate system)  <a href="#aa6f19c19e934fff23cfbd4d2edad60da"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#aee180c05e66f65b7f7b70dee234591bf">RotateWXYZ</a> (double a, double x, double y, double z)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the lateral movements of the model (Global coordinate system)  <a href="#aee180c05e66f65b7f7b70dee234591bf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a902af5589ecd83a71f90d67aa1e85e49">RotateX</a> (double x)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the lateral movements of the model (Local coordinate system)  <a href="#a902af5589ecd83a71f90d67aa1e85e49"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a4a15155094bcc5013ce2b7537a43cf01">RotateY</a> (double y)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the lateral movements of the model (Local coordinate system)  <a href="#a4a15155094bcc5013ce2b7537a43cf01"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ab5ec54d4738e90cec340baf8f5514f4a">RotateZ</a> (double rotation)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the model on its own axes (Local coordinate system)  <a href="#ab5ec54d4738e90cec340baf8f5514f4a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd098ad5f6abd5df655855447333bd5e"></a><!-- doxytag: member="vtkModel::Reset" ref="afd098ad5f6abd5df655855447333bd5e" args="()" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#afd098ad5f6abd5df655855447333bd5e">Reset</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset model to its origin. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbabaca1b16dd20d2aa3821cbf8a3347"></a><!-- doxytag: member="vtkModel::Restore" ref="acbabaca1b16dd20d2aa3821cbf8a3347" args="()" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#acbabaca1b16dd20d2aa3821cbf8a3347">Restore</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore model to its last position/orientation. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ae8e4dab5943d1d5e9b9a6a4c92244795">Hide</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario model.  <a href="#ae8e4dab5943d1d5e9b9a6a4c92244795"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ad14571234eddfb65c0b6c76e421ce9ec">Show</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display model.  <a href="#ad14571234eddfb65c0b6c76e421ce9ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a09e7fea03b1111b43b401f49027aff23">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable model.  <a href="#a09e7fea03b1111b43b401f49027aff23"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1be31fd4cfe2397c39376a1431bad6b2">Disable</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable model.  <a href="#a1be31fd4cfe2397c39376a1431bad6b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a20b3c3f7cb50a1757d70e9e05cfa2f03">IsVisible</a> ()</td></tr>
@@ -206,9 +177,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5e21bd1a69099cdcbc288070225c08"></a><!-- doxytag: member="vtkModel::Reader" ref="a0e5e21bd1a69099cdcbc288070225c08" args="" -->
 vtkXMLPolyDataReader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a0e5e21bd1a69099cdcbc288070225c08">Reader</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model data file reader. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68002aa1c74064648d133e9388d095c2"></a><!-- doxytag: member="vtkModel::Transform" ref="a68002aa1c74064648d133e9388d095c2" args="" -->
-vtkTransform *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a68002aa1c74064648d133e9388d095c2">Transform</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform function of the model actor. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3514ed8406b87b30c8fc658e9415889d"></a><!-- doxytag: member="vtkModel::Matrix" ref="a3514ed8406b87b30c8fc658e9415889d" args="" -->
+vtkMatrix4x4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a3514ed8406b87b30c8fc658e9415889d">Matrix</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform Matrix. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29f3febd9f5cefd0728253258a067d95"></a><!-- doxytag: member="vtkModel::SmoothFilter" ref="a29f3febd9f5cefd0728253258a067d95" args="" -->
 vtkSmoothPolyDataFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a29f3febd9f5cefd0728253258a067d95">SmoothFilter</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Smoothing filter. <br/></td></tr>
@@ -224,18 +195,6 @@ vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dae40c93973f421d49360eaf969a9f3"></a><!-- doxytag: member="vtkModel::Initialized" ref="a1dae40c93973f421d49360eaf969a9f3" args="" -->
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1dae40c93973f421d49360eaf969a9f3">Initialized</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Model initialization flag. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1eeafc31f958866838bbfb495ca93ee"></a><!-- doxytag: member="vtkModel::Scale" ref="ac1eeafc31f958866838bbfb495ca93ee" args="[3]" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#ac1eeafc31f958866838bbfb495ca93ee">Scale</a> [3]</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale factor (size) <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6a59cd4c9cf3cca1dae3fae90360b25"></a><!-- doxytag: member="vtkModel::Origin" ref="af6a59cd4c9cf3cca1dae3fae90360b25" args="[3]" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#af6a59cd4c9cf3cca1dae3fae90360b25">Origin</a> [3]</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Origin point for transforms. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b669b8a47e5a8fd3f051aad3c134e20"></a><!-- doxytag: member="vtkModel::Position" ref="a1b669b8a47e5a8fd3f051aad3c134e20" args="[3]" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1b669b8a47e5a8fd3f051aad3c134e20">Position</a> [3]</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Position. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ba4409b6751709834eb1233e484e83a"></a><!-- doxytag: member="vtkModel::Orientation" ref="a1ba4409b6751709834eb1233e484e83a" args="[3]" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkModel.html#a1ba4409b6751709834eb1233e484e83a">Orientation</a> [3]</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object orientation: Yaw, Pitch, Roll angles. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class represents an abstract model on a scenario element. </p>
@@ -256,6 +215,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <div class="memdoc">
 
 <p>Disable model. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a09e7fea03b1111b43b401f49027aff23"></a><!-- doxytag: member="vtkModel::Enable" ref="a09e7fea03b1111b43b401f49027aff23" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkModel::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable model. </p>
 <p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
 
 </div>
@@ -336,6 +314,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a10d39b2362692d9ccbabe4a2121debb1"></a><!-- doxytag: member="vtkModel::GetMatrix" ref="a10d39b2362692d9ccbabe4a2121debb1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkMatrix4x4 * vtkModel::GetMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get transform matrix. </p>
+<p>Transformation matrix for displaying purposes </p>
+
+</div>
+</div>
 <a class="anchor" id="a71769995a4a3560e6b80ce636587de90"></a><!-- doxytag: member="vtkModel::GetModelType" ref="a71769995a4a3560e6b80ce636587de90" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -393,63 +390,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a2c2ee22176dc608062194fe52eb8ae38"></a><!-- doxytag: member="vtkModel::GetOrientation" ref="a2c2ee22176dc608062194fe52eb8ae38" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double* vtkModel::GetOrientation </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get model orientation angles. (yaw, pitch, roll) (WXYZ) </p>
-<p>(yaw, pitch, roll) (WXYZ) </p>
-
-</div>
-</div>
-<a class="anchor" id="a7402a03b57a647ec41658048b6349a3b"></a><!-- doxytag: member="vtkModel::GetOrigin" ref="a7402a03b57a647ec41658048b6349a3b" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double* vtkModel::GetOrigin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get the model origin Point. </p>
-<p>Reference point where the rotation calculus are made </p>
-
-</div>
-</div>
-<a class="anchor" id="accdbe4a31600bb01dbc3fba30ab8dabb"></a><!-- doxytag: member="vtkModel::GetScale" ref="accdbe4a31600bb01dbc3fba30ab8dabb" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double* vtkModel::GetScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return model scale. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd>SetScale(double) </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a6fc61279c4eda328749115ba97e6a543"></a><!-- doxytag: member="vtkModel::GetSource" ref="a6fc61279c4eda328749115ba97e6a543" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -485,25 +425,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 <p>Returns the state of the model. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#a4b4c6445f788d5364abf9bbb87411953" title="Assign the model state.">SetStatus(vtkModelStatus)</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6c902df3f7ec09b471589cbfc685e874"></a><!-- doxytag: member="vtkModel::GetTransform" ref="a6c902df3f7ec09b471589cbfc685e874" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkTransform * vtkModel::GetTransform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get transform function. </p>
-<p>Transform function for displaying purposes </p>
 
 </div>
 </div>
@@ -567,7 +488,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
  </li>
 </ul>
 
-<p>Reimplemented in <a class="el" href="classvtkCollisionModel.html#a9e92aaa83074cf5cb93b402cab8ea880">vtkCollisionModel</a>, <a class="el" href="classvtkDeformationModel.html#a85f6d18112e8f0b0af30ed39791f8826">vtkDeformationModel</a>, <a class="el" href="classvtkEDMInterface.html#a39db04e4435630c70ae55e5a810b15b3">vtkEDMInterface</a>, <a class="el" href="classvtkPSSInterface.html#ab34018d4e2ba1ed910637ac5eb6ec154">vtkPSSInterface</a>, and <a class="el" href="classvtkVisualizationModel.html#a5de6cc31e6cf024baa1f973f686d9059">vtkVisualizationModel</a>.</p>
+<p>Reimplemented in <a class="el" href="classvtkCollisionModel.html#a9e92aaa83074cf5cb93b402cab8ea880">vtkCollisionModel</a>, <a class="el" href="classvtkCUDAParticleSystemInterface.html#abf1c273c66e830e34a8af896ad650a5f">vtkCUDAParticleSystemInterface</a>, <a class="el" href="classvtkDeformationModel.html#a85f6d18112e8f0b0af30ed39791f8826">vtkDeformationModel</a>, <a class="el" href="classvtkEDMInterface.html#a39db04e4435630c70ae55e5a810b15b3">vtkEDMInterface</a>, <a class="el" href="classvtkParticleSpringSystemInterface.html#a773e6cd402024058c1517c4c24e73959">vtkParticleSpringSystemInterface</a>, and <a class="el" href="classvtkVisualizationModel.html#a5de6cc31e6cf024baa1f973f686d9059">vtkVisualizationModel</a>.</p>
 
 </div>
 </div>
@@ -639,135 +560,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <li>be computed in collision detection.</li>
 <li>be used in simulation. </li>
 </ul>
-
-</div>
-</div>
-<a class="anchor" id="aee180c05e66f65b7f7b70dee234591bf"></a><!-- doxytag: member="vtkModel::RotateWXYZ" ref="aee180c05e66f65b7f7b70dee234591bf" args="(double a, double x, double y, double z)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkModel::RotateWXYZ </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>z</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements the lateral movements of the model (Global coordinate system) </p>
-<p>The X parameter contains the relative movement in the horizontal axes </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>a orientation angle </td></tr>
-    <tr><td class="paramname">x</td><td>x component </td></tr>
-    <tr><td class="paramname">y</td><td>y component </td></tr>
-    <tr><td class="paramname">z</td><td>z component Note: this function must be implemented in inheriting classes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a902af5589ecd83a71f90d67aa1e85e49"></a><!-- doxytag: member="vtkModel::RotateX" ref="a902af5589ecd83a71f90d67aa1e85e49" args="(double x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkModel::RotateX </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements the lateral movements of the model (Local coordinate system) </p>
-<p>The X parameter contains the relative movement in the horizontal axes </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>x orientation angle Note: this function must be implemented in inheriting classes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4a15155094bcc5013ce2b7537a43cf01"></a><!-- doxytag: member="vtkModel::RotateY" ref="a4a15155094bcc5013ce2b7537a43cf01" args="(double y)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkModel::RotateY </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements the lateral movements of the model (Local coordinate system) </p>
-<p>The Y parameter contains the relative movement in the vertical axes </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">y</td><td>y orientation angle Note: this function must be implemented in inheriting classes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ab5ec54d4738e90cec340baf8f5514f4a"></a><!-- doxytag: member="vtkModel::RotateZ" ref="ab5ec54d4738e90cec340baf8f5514f4a" args="(double rotation)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkModel::RotateZ </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Rotate the model on its own axes (Local coordinate system) </p>
-<p>This function rotate the model on its own axis the value of an angle given by the "Rotation" variable the rotation is produced acting on the actors who compose the model. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rotation</td><td>rotation angle (radians) Note: this function must be implemented in inheriting classes </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -891,114 +683,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a71825ad63988c40dfce2a9c67a048ad5"></a><!-- doxytag: member="vtkModel::SetOrientation" ref="a71825ad63988c40dfce2a9c67a048ad5" args="(double, double, double)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vtkModel::SetOrientation </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Set model orientation angles. </p>
-<p>(yaw, pitch, roll) (WXYZ) </p>
-
-</div>
-</div>
-<a class="anchor" id="a2c7e5653c96813cce9f3646cd0d370f1"></a><!-- doxytag: member="vtkModel::SetOrigin" ref="a2c7e5653c96813cce9f3646cd0d370f1" args="(double, double, double)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vtkModel::SetOrigin </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Set the model origin Point. </p>
-<p>Reference point where the rotation calculus are made </p>
-
-</div>
-</div>
-<a class="anchor" id="a8d62be86a3492ba746a3f8b26625b13a"></a><!-- doxytag: member="vtkModel::SetScale" ref="a8d62be86a3492ba746a3f8b26625b13a" args="(double, double, double)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void vtkModel::SetScale </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Assign model scale. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkModel.html#accdbe4a31600bb01dbc3fba30ab8dabb" title="Return model scale.">GetScale()</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ab9b0173e4f749c48d10b3bb6462b6dc6"></a><!-- doxytag: member="vtkModel::SetSource" ref="ab9b0173e4f749c48d10b3bb6462b6dc6" args="(vtkPolyData *source)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1079,37 +763,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="aa6f19c19e934fff23cfbd4d2edad60da"></a><!-- doxytag: member="vtkModel::Translate" ref="aa6f19c19e934fff23cfbd4d2edad60da" args="(double *vector)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkModel::Translate </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>vector</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements the translation of the model (Local coordinate system) </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vector</td><td>position vector of the translation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Common/<a class="el" href="vtkModel_8h_source.html">vtkModel.h</a></li>
 <li>Common/vtkModel.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -38,7 +38,10 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">vtkToolEndovascular Class Reference</div>  </div>
@@ -66,6 +69,14 @@ Collaboration diagram for vtkToolEndovascular:</div>
 
 <p><a href="classvtkToolEndovascular-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkToolType</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool type definition. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObjectType</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of piece types. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObjectStatus</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of object status. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0775e3cf364f2372225fa557c9d6c79"></a><!-- doxytag: member="vtkToolEndovascular::vtkTypeRevisionMacro" ref="af0775e3cf364f2372225fa557c9d6c79" args="(vtkToolEndovascular, vtkTool)" -->
@@ -108,6 +119,109 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the tool in degrees from current orientation about the Y axis using the right hand rule.  <a href="#aafbe4171d3cf803b12b9f8793e8351a7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkToolEndovascular.html#ab8beb25314cf4cd61a26687ff73f0553">RotateZ</a> (double angle)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the tool in degrees from current orientation about the Y axis using the right hand rule.  <a href="#ab8beb25314cf4cd61a26687ff73f0553"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ecf18ab7b820023bd3c45d87c0cd0b5"></a><!-- doxytag: member="vtkToolEndovascular::vtkTypeRevisionMacro" ref="a4ecf18ab7b820023bd3c45d87c0cd0b5" args="(vtkTool, vtkScenarioObject)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkTool.html#a4ecf18ab7b820023bd3c45d87c0cd0b5">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkTool.html">vtkTool</a>, <a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab260d38b4e8d3bac3cada2590d6ed8ae"></a><!-- doxytag: member="vtkToolEndovascular::vtkTypeRevisionMacro" ref="ab260d38b4e8d3bac3cada2590d6ed8ae" args="(vtkScenarioObject, vtkPolyDataAlgorithm)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab260d38b4e8d3bac3cada2590d6ed8ae">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a>, vtkPolyDataAlgorithm)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkTool.html#a88c45841c0cc319524f63b7c7517495c">SetToolType</a> (<a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkTool::vtkToolType</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set tool type.  <a href="#a88c45841c0cc319524f63b7c7517495c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkTool::vtkToolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkTool.html#ad0bd9c7a0f5ceea99ee2cabf54ad507a">GetToolType</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return tool type.  <a href="#ad0bd9c7a0f5ceea99ee2cabf54ad507a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#acb0fd7e13cbd2949607d9ac91a5fc00f">SetId</a> (vtkIdType)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the identifying key of the object.  <a href="#acb0fd7e13cbd2949607d9ac91a5fc00f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ac4e5f89c1821704da047ebfea208d8df">GetId</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the identifying key of the object.  <a href="#ac4e5f89c1821704da047ebfea208d8df"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a97f457304d1e7cc2dea238b440eb3e0d">SetObjectType</a> (<a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObject::vtkScenarioObjectType</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the object type.  <a href="#a97f457304d1e7cc2dea238b440eb3e0d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
+<a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObject::vtkScenarioObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a73c955597f5d6bf03410d1f4c385e15c">GetObjectType</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the object.  <a href="#a73c955597f5d6bf03410d1f4c385e15c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#aac2b86b3002aa76c314b6cdc90d8f839">SetStatus</a> (<a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObject::vtkScenarioObjectStatus</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the object state.  <a href="#aac2b86b3002aa76c314b6cdc90d8f839"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
+<a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObject::vtkScenarioObjectStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab542ad12f4cd8c8f5b5395312863590f">GetStatus</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the object.  <a href="#ab542ad12f4cd8c8f5b5395312863590f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ada64f68e70d37323ae7d3e2a0c8b0ffe">SetName</a> (const char *)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign object name.  <a href="#ada64f68e70d37323ae7d3e2a0c8b0ffe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ad3f86f19af064a7cdb5cd82bc1ff46f9">GetName</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return object scale.  <a href="#ad3f86f19af064a7cdb5cd82bc1ff46f9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a8004a6f759d2c6986a36ac44122c1ab9">SetRenderWindow</a> (vtkRenderWindow *r)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the render window of the object.  <a href="#a8004a6f759d2c6986a36ac44122c1ab9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkRenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a94b734f5c980517a1bdb8cc4a7667dce">GetRenderWindow</a> (vtkRenderWindow *r)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render window of the object.  <a href="#a94b734f5c980517a1bdb8cc4a7667dce"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a80412b5ecfe29ed7d793c4af8ba95596">SetRenderer</a> (vtkRenderer *r)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the renderer of the object.  <a href="#a80412b5ecfe29ed7d793c4af8ba95596"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#abec6c08132bb1f84d5b6205d917240ac">GetRenderer</a> (vtkRenderer *r)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the renderer of the object.  <a href="#abec6c08132bb1f84d5b6205d917240ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add636f9d181aa976c19be75f1a0532f8"></a><!-- doxytag: member="vtkToolEndovascular::GetElements" ref="add636f9d181aa976c19be75f1a0532f8" args="()" -->
+<a class="el" href="classvtkScenarioElementCollection.html">vtkScenarioElementCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#add636f9d181aa976c19be75f1a0532f8">GetElements</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the elements of the object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a55d9790577a77e1e22ac63cb68bfeb"></a><!-- doxytag: member="vtkToolEndovascular::SetElements" ref="a5a55d9790577a77e1e22ac63cb68bfeb" args="(vtkScenarioElementCollection *elements)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a5a55d9790577a77e1e22ac63cb68bfeb">SetElements</a> (<a class="el" href="classvtkScenarioElementCollection.html">vtkScenarioElementCollection</a> *elements)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign the elements to the object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90f7fd5cb9d35c20eecc4973cd045b01"></a><!-- doxytag: member="vtkToolEndovascular::AddElement" ref="a90f7fd5cb9d35c20eecc4973cd045b01" args="(vtkScenarioElement *e)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a90f7fd5cb9d35c20eecc4973cd045b01">AddElement</a> (<a class="el" href="classvtkScenarioElement.html">vtkScenarioElement</a> *e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an element to the object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997e41f1e0390db44c8fba1e8f6516b8"></a><!-- doxytag: member="vtkToolEndovascular::RemoveElement" ref="a997e41f1e0390db44c8fba1e8f6516b8" args="(vtkIdType id)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a997e41f1e0390db44c8fba1e8f6516b8">RemoveElement</a> (vtkIdType id)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an element of the collection at the specified id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6e15e4637c84eb28c52fe275ce30185"></a><!-- doxytag: member="vtkToolEndovascular::GetElement" ref="ab6e15e4637c84eb28c52fe275ce30185" args="(vtkIdType id)" -->
+<a class="el" href="classvtkScenarioElement.html">vtkScenarioElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab6e15e4637c84eb28c52fe275ce30185">GetElement</a> (vtkIdType id)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element of the object at the specified id. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af68c34ba7ad9328496f4225431629bf6"></a><!-- doxytag: member="vtkToolEndovascular::GetNumberOfElements" ref="af68c34ba7ad9328496f4225431629bf6" args="()" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#af68c34ba7ad9328496f4225431629bf6">GetNumberOfElements</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number elements of the object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ac08d29ac06a7f5c05f58c07695c60fc8">Translate</a> (double x, double y, double z)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the translation of the object (Local coordinate system)  <a href="#ac08d29ac06a7f5c05f58c07695c60fc8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a55bf89ee29785e329e9a2eea61a3782e">Translate</a> (double *vector)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the translation of the object (Local coordinate system)  <a href="#a55bf89ee29785e329e9a2eea61a3782e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a8dd54ac27197832f06625d273612046b">RotateWXYZ</a> (double a, double x, double y, double z)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the lateral movements of the object (Global coordinate system)  <a href="#a8dd54ac27197832f06625d273612046b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20f765d8fa7c29294e7a0a235b5dd264"></a><!-- doxytag: member="vtkToolEndovascular::Reset" ref="a20f765d8fa7c29294e7a0a235b5dd264" args="()" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a20f765d8fa7c29294e7a0a235b5dd264">Reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all object elements to their original state. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59065ce2f4db281478c0eb71f871be2f"></a><!-- doxytag: member="vtkToolEndovascular::Restore" ref="a59065ce2f4db281478c0eb71f871be2f" args="()" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a59065ce2f4db281478c0eb71f871be2f">Restore</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore all element elements to their last position/orientation. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a6fc22f49a32fd36ee2a3384c2ab56b7b">Show</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/Display object.  <a href="#a6fc22f49a32fd36ee2a3384c2ab56b7b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a9a8c0925dd5f8dbb8780542bfeeed0e1">Hide</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide scenario object.  <a href="#a9a8c0925dd5f8dbb8780542bfeeed0e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a08d62259fb6536704384bc69ff4b3301">Enable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable object.  <a href="#a08d62259fb6536704384bc69ff4b3301"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab8f6259410074f691c6b31609cc2147d">Disable</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable object.  <a href="#ab8f6259410074f691c6b31609cc2147d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a6a7b64b2d666039a73f73c12a6bb3b6a">IsEnabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is visible.  <a href="#a6a7b64b2d666039a73f73c12a6bb3b6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#af6d19ed8149265a9c4fbd3bd924120b1">IsDisabled</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if object is disabled.  <a href="#af6d19ed8149265a9c4fbd3bd924120b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcab930d00b1cc9fc5e998949c68e923"></a><!-- doxytag: member="vtkToolEndovascular::IsInitialized" ref="afcab930d00b1cc9fc5e998949c68e923" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#afcab930d00b1cc9fc5e998949c68e923">IsInitialized</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if object has been initialized. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ad2dfa9bf5bfc9e4dfc5671c001153395">InsertNextCollision</a> (<a class="el" href="classvtkCollision.html">vtkCollision</a> *collision)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a collision to the list.  <a href="#ad2dfa9bf5bfc9e4dfc5671c001153395"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a8fa8e8271e2567d1c43b455b9beff597">SetCollisions</a> (<a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *collisions)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add several collisions to the list.  <a href="#a8fa8e8271e2567d1c43b455b9beff597"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfa7184d233ed019fadf13cae589616d"></a><!-- doxytag: member="vtkToolEndovascular::GetCollisions" ref="abfa7184d233ed019fadf13cae589616d" args="()" -->
+<a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#abfa7184d233ed019fadf13cae589616d">GetCollisions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get organ collisions. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3801dcd35aaff4a62893dc812e85029"></a><!-- doxytag: member="vtkToolEndovascular::GetNumberOfCollisions" ref="ae3801dcd35aaff4a62893dc812e85029" args="()" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ae3801dcd35aaff4a62893dc812e85029">GetNumberOfCollisions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of collisions. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a2ed1c7d7ec24499cde6abcee6daf14a1">CleanCollisions</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all collisions.  <a href="#a2ed1c7d7ec24499cde6abcee6daf14a1"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b3d96852e2a91bae09cee1812570d9f"></a><!-- doxytag: member="vtkToolEndovascular::New" ref="a1b3d96852e2a91bae09cee1812570d9f" args="()" -->
+static <a class="el" href="classvtkScenarioObject.html">vtkScenarioObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a1b3d96852e2a91bae09cee1812570d9f">New</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new organ. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7be10ca2ed2b5b5e132beb879eb96b9e"></a><!-- doxytag: member="vtkToolEndovascular::RequestData" ref="a7be10ca2ed2b5b5e132beb879eb96b9e" args="(vtkInformation *vtkNotUsed(request), vtkInformationVector **inputVector, vtkInformationVector *outputVector)" -->
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a7be10ca2ed2b5b5e132beb879eb96b9e">RequestData</a> (vtkInformation *vtkNotUsed(request), vtkInformationVector **inputVector, vtkInformationVector *outputVector)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the algorithm request (Update). <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b5068f4e646df698040743c225996b9"></a><!-- doxytag: member="vtkToolEndovascular::ForceFeedback" ref="a2b5068f4e646df698040743c225996b9" args="[3]" -->
@@ -125,6 +239,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b220e9fa6a56b0bc729640d6670e4f8"></a><!-- doxytag: member="vtkToolEndovascular::RollAngle" ref="a0b220e9fa6a56b0bc729640d6670e4f8" args="" -->
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkToolEndovascular.html#a0b220e9fa6a56b0bc729640d6670e4f8">RollAngle</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool Roll Angle. VTK Z-axis about rotation. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaeb562941654178d753d68268ae40ab"></a><!-- doxytag: member="vtkToolEndovascular::ToolType" ref="abaeb562941654178d753d68268ae40ab" args="" -->
+<a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkToolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkTool.html#abaeb562941654178d753d68268ae40ab">ToolType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool Type. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1b071455b4815b473a933fe429ba3f2"></a><!-- doxytag: member="vtkToolEndovascular::Id" ref="af1b071455b4815b473a933fe429ba3f2" args="" -->
+vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#af1b071455b4815b473a933fe429ba3f2">Id</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object identifier. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83709e6e42637ff28879648e39598745"></a><!-- doxytag: member="vtkToolEndovascular::ObjectType" ref="a83709e6e42637ff28879648e39598745" args="" -->
+<a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a83709e6e42637ff28879648e39598745">ObjectType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Type (Tool, Organ, etc...) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87977c3f1e79108c637d57192e99b5ab"></a><!-- doxytag: member="vtkToolEndovascular::Name" ref="a87977c3f1e79108c637d57192e99b5ab" args="" -->
+char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a87977c3f1e79108c637d57192e99b5ab">Name</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object Name. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd9c274996f7e3421e553d6debe018b9"></a><!-- doxytag: member="vtkToolEndovascular::Status" ref="acd9c274996f7e3421e553d6debe018b9" args="" -->
+<a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObjectStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#acd9c274996f7e3421e553d6debe018b9">Status</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Object State. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c24776d464851d200baea504548d6bb"></a><!-- doxytag: member="vtkToolEndovascular::Initialized" ref="a2c24776d464851d200baea504548d6bb" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a2c24776d464851d200baea504548d6bb">Initialized</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization flag. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3c9e12639223fd3138ff5826e46351a"></a><!-- doxytag: member="vtkToolEndovascular::Elements" ref="ab3c9e12639223fd3138ff5826e46351a" args="" -->
+<a class="el" href="classvtkScenarioElementCollection.html">vtkScenarioElementCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#ab3c9e12639223fd3138ff5826e46351a">Elements</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of object elements. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a426dcc95285621956a2db98af07809fa"></a><!-- doxytag: member="vtkToolEndovascular::Collisions" ref="a426dcc95285621956a2db98af07809fa" args="" -->
+<a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a426dcc95285621956a2db98af07809fa">Collisions</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of object collisions. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29a00c7aebaafdf0c06b0e4955a51cf3"></a><!-- doxytag: member="vtkToolEndovascular::RenderWindow" ref="a29a00c7aebaafdf0c06b0e4955a51cf3" args="" -->
+vtkRenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a29a00c7aebaafdf0c06b0e4955a51cf3">RenderWindow</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Render Window of the object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64ea712a4978916c9e4fbd343a6121f8"></a><!-- doxytag: member="vtkToolEndovascular::Renderer" ref="a64ea712a4978916c9e4fbd343a6121f8" args="" -->
+vtkRenderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkScenarioObject.html#a64ea712a4978916c9e4fbd343a6121f8">Renderer</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer of the object. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classvtkToolEndovascular.html" title="vtkToolEndovascular class implements a surgical endovascular tool.">vtkToolEndovascular</a> class implements a surgical endovascular tool. </p>
@@ -157,6 +301,63 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a2ed1c7d7ec24499cde6abcee6daf14a1"></a><!-- doxytag: member="vtkToolEndovascular::CleanCollisions" ref="a2ed1c7d7ec24499cde6abcee6daf14a1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::CleanCollisions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Remove all collisions. </p>
+<p>Remove all collisions from the list. Memory is not freed </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8f6259410074f691c6b31609cc2147d"></a><!-- doxytag: member="vtkToolEndovascular::Disable" ref="ab8f6259410074f691c6b31609cc2147d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Disable object. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a08d62259fb6536704384bc69ff4b3301"></a><!-- doxytag: member="vtkToolEndovascular::Enable" ref="a08d62259fb6536704384bc69ff4b3301" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Enable object. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
 <a class="anchor" id="aae5eabd53e53522e0450b90c76951ca7"></a><!-- doxytag: member="vtkToolEndovascular::GetForceFeedback" ref="aae5eabd53e53522e0450b90c76951ca7" args="(float Force[]) const " -->
 <div class="memitem">
 <div class="memproto">
@@ -176,6 +377,141 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkToolEndovascular.html#a38dd2fc573b27a69e107363785e2d4ba" title="Assign the haptic force as vector.">SetForceFeedback(float Force[])</a> </dd>
 <dd>
 <a class="el" href="classvtkToolEndovascular.html#ae6be37b0037f39cd70c4e239b5e2716b" title="Assign the haptic force components individually.">SetForceFeedback(float x, float y, float z)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4e5f89c1821704da047ebfea208d8df"></a><!-- doxytag: member="vtkToolEndovascular::GetId" ref="ac4e5f89c1821704da047ebfea208d8df" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual vtkIdType vtkScenarioObject::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the identifying key of the object. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioObject.html#acb0fd7e13cbd2949607d9ac91a5fc00f" title="Assign the identifying key of the object.">SetId(vtkIdType Id)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3f86f19af064a7cdb5cd82bc1ff46f9"></a><!-- doxytag: member="vtkToolEndovascular::GetName" ref="ad3f86f19af064a7cdb5cd82bc1ff46f9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char* vtkScenarioObject::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return object scale. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioObject.html#ada64f68e70d37323ae7d3e2a0c8b0ffe" title="Assign object name.">SetName(const char * name)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a73c955597f5d6bf03410d1f4c385e15c"></a><!-- doxytag: member="vtkToolEndovascular::GetObjectType" ref="a73c955597f5d6bf03410d1f4c385e15c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObject::vtkScenarioObjectType</a> vtkScenarioObject::GetObjectType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the type of the object. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>SetType(vtkScenarioObjectType) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abec6c08132bb1f84d5b6205d917240ac"></a><!-- doxytag: member="vtkToolEndovascular::GetRenderer" ref="abec6c08132bb1f84d5b6205d917240ac" args="(vtkRenderer *r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkRenderer* vtkScenarioObject::GetRenderer </td>
+          <td>(</td>
+          <td class="paramtype">vtkRenderer *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the renderer of the object. </p>
+<p>Return the renderer of the object </p>
+
+</div>
+</div>
+<a class="anchor" id="a94b734f5c980517a1bdb8cc4a7667dce"></a><!-- doxytag: member="vtkToolEndovascular::GetRenderWindow" ref="a94b734f5c980517a1bdb8cc4a7667dce" args="(vtkRenderWindow *r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vtkRenderWindow* vtkScenarioObject::GetRenderWindow </td>
+          <td>(</td>
+          <td class="paramtype">vtkRenderWindow *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Get the render window of the object. </p>
+<p>Return the render window of the object </p>
+
+</div>
+</div>
+<a class="anchor" id="ab542ad12f4cd8c8f5b5395312863590f"></a><!-- doxytag: member="vtkToolEndovascular::GetStatus" ref="ab542ad12f4cd8c8f5b5395312863590f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObject::vtkScenarioObjectStatus</a> vtkScenarioObject::GetStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the state of the object. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>SetState(vtkScenarioStateType) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad0bd9c7a0f5ceea99ee2cabf54ad507a"></a><!-- doxytag: member="vtkToolEndovascular::GetToolType" ref="ad0bd9c7a0f5ceea99ee2cabf54ad507a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkTool::vtkToolType</a> vtkTool::GetToolType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return tool type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkTool.html#a88c45841c0cc319524f63b7c7517495c" title="Set tool type.">SetToolType(vtkToolType)</a> </dd></dl>
 
 </div>
 </div>
@@ -242,6 +578,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a9a8c0925dd5f8dbb8780542bfeeed0e1"></a><!-- doxytag: member="vtkToolEndovascular::Hide" ref="a9a8c0925dd5f8dbb8780542bfeeed0e1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Hide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hide scenario object. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
 <a class="anchor" id="a03f97c66daf6c2e31884b4192dc77b4b"></a><!-- doxytag: member="vtkToolEndovascular::Init" ref="a03f97c66daf6c2e31884b4192dc77b4b" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -262,6 +617,131 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <p>Reimplemented from <a class="el" href="classvtkScenarioObject.html#ac2265c02febf242aaaf889ba2ea4ef97">vtkScenarioObject</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classvtkToolCatheter.html#a557f3595c2d122e8ea015f02ff511805">vtkToolCatheter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2dfa9bf5bfc9e4dfc5671c001153395"></a><!-- doxytag: member="vtkToolEndovascular::InsertNextCollision" ref="ad2dfa9bf5bfc9e4dfc5671c001153395" args="(vtkCollision *collision)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::InsertNextCollision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkCollision.html">vtkCollision</a> *&#160;</td>
+          <td class="paramname"><em>collision</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a collision to the list. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collision</td><td><a class="el" href="classvtkCollision.html" title="This class contains the required information to define a collision.">vtkCollision</a> object with the information of the collision( toolId, organId, point, cell... etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd>InsertCollisions( vtkCollisionCollection* collisions ) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af6d19ed8149265a9c4fbd3bd924120b1"></a><!-- doxytag: member="vtkToolEndovascular::IsDisabled" ref="af6d19ed8149265a9c4fbd3bd924120b1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkScenarioObject::IsDisabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if object is disabled. </p>
+<p>When an object is disabled it will NOT:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a6a7b64b2d666039a73f73c12a6bb3b6a"></a><!-- doxytag: member="vtkToolEndovascular::IsEnabled" ref="a6a7b64b2d666039a73f73c12a6bb3b6a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkScenarioObject::IsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Check if object is visible. </p>
+<p>When an object is enabled it will:</p>
+<ul>
+<li>be visible.</li>
+<li>be computed in collision detection.</li>
+<li>be used in simulation. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a8dd54ac27197832f06625d273612046b"></a><!-- doxytag: member="vtkToolEndovascular::RotateWXYZ" ref="a8dd54ac27197832f06625d273612046b" args="(double a, double x, double y, double z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::RotateWXYZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements the lateral movements of the object (Global coordinate system) </p>
+<p>The X parameter contains the relative movement in the horizontal axes </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>a orientation angle </td></tr>
+    <tr><td class="paramname">x</td><td>x component </td></tr>
+    <tr><td class="paramname">y</td><td>y component </td></tr>
+    <tr><td class="paramname">z</td><td>z component Note: this function must be implemented in inheriting classes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -331,6 +811,57 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
+<a class="anchor" id="a8fa8e8271e2567d1c43b455b9beff597"></a><!-- doxytag: member="vtkToolEndovascular::SetCollisions" ref="a8fa8e8271e2567d1c43b455b9beff597" args="(vtkCollisionCollection *collisions)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::SetCollisions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkCollisionCollection.html">vtkCollisionCollection</a> *&#160;</td>
+          <td class="paramname"><em>collisions</em></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add several collisions to the list. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisions</td><td>List of <a class="el" href="classvtkCollision.html" title="This class contains the required information to define a collision.">vtkCollision</a> objects </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioObject.html#ad2dfa9bf5bfc9e4dfc5671c001153395" title="Add a collision to the list.">InsertNextCollision( vtkCollision* collision )</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38dd2fc573b27a69e107363785e2d4ba"></a><!-- doxytag: member="vtkToolEndovascular::SetForceFeedback" ref="a38dd2fc573b27a69e107363785e2d4ba" args="(float Force[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkToolEndovascular::SetForceFeedback </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Force</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign the haptic force as vector. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Force</td><td>force vector of components </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ae6be37b0037f39cd70c4e239b5e2716b"></a><!-- doxytag: member="vtkToolEndovascular::SetForceFeedback" ref="ae6be37b0037f39cd70c4e239b5e2716b" args="(float x, float y, float z)" -->
 <div class="memitem">
 <div class="memproto">
@@ -374,25 +905,228 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a class="anchor" id="a38dd2fc573b27a69e107363785e2d4ba"></a><!-- doxytag: member="vtkToolEndovascular::SetForceFeedback" ref="a38dd2fc573b27a69e107363785e2d4ba" args="(float Force[])" -->
+<a class="anchor" id="acb0fd7e13cbd2949607d9ac91a5fc00f"></a><!-- doxytag: member="vtkToolEndovascular::SetId" ref="acb0fd7e13cbd2949607d9ac91a5fc00f" args="(vtkIdType)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkToolEndovascular::SetForceFeedback </td>
+          <td class="memname">virtual void vtkScenarioObject::SetId </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>Force</em>[]</td><td>)</td>
-          <td></td>
+          <td class="paramtype">vtkIdType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Assign the haptic force as vector. </p>
+<p>Assign the identifying key of the object. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioObject.html#ac4e5f89c1821704da047ebfea208d8df" title="Returns the identifying key of the object.">GetId()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada64f68e70d37323ae7d3e2a0c8b0ffe"></a><!-- doxytag: member="vtkToolEndovascular::SetName" ref="ada64f68e70d37323ae7d3e2a0c8b0ffe" args="(const char *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkScenarioObject::SetName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign object name. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkScenarioObject.html#ad3f86f19af064a7cdb5cd82bc1ff46f9" title="Return object scale.">GetName()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a97f457304d1e7cc2dea238b440eb3e0d"></a><!-- doxytag: member="vtkToolEndovascular::SetObjectType" ref="a97f457304d1e7cc2dea238b440eb3e0d" args="(vtkScenarioObject::vtkScenarioObjectType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkScenarioObject::SetObjectType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkScenarioObject.html#a5116d763d5db432f734e05002e3ba542">vtkScenarioObject::vtkScenarioObjectType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign the object type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>GetType() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a80412b5ecfe29ed7d793c4af8ba95596"></a><!-- doxytag: member="vtkToolEndovascular::SetRenderer" ref="a80412b5ecfe29ed7d793c4af8ba95596" args="(vtkRenderer *r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::SetRenderer </td>
+          <td>(</td>
+          <td class="paramtype">vtkRenderer *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the renderer of the object. </p>
+<p>Assign the renderer for the object </p>
+
+</div>
+</div>
+<a class="anchor" id="a8004a6f759d2c6986a36ac44122c1ab9"></a><!-- doxytag: member="vtkToolEndovascular::SetRenderWindow" ref="a8004a6f759d2c6986a36ac44122c1ab9" args="(vtkRenderWindow *r)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::SetRenderWindow </td>
+          <td>(</td>
+          <td class="paramtype">vtkRenderWindow *&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td><code> [inline, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the render window of the object. </p>
+<p>Assign the render window for the object </p>
+
+</div>
+</div>
+<a class="anchor" id="aac2b86b3002aa76c314b6cdc90d8f839"></a><!-- doxytag: member="vtkToolEndovascular::SetStatus" ref="aac2b86b3002aa76c314b6cdc90d8f839" args="(vtkScenarioObject::vtkScenarioObjectStatus)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkScenarioObject::SetStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkScenarioObject.html#a877189d9baae300ee3ccf781a0952801">vtkScenarioObject::vtkScenarioObjectStatus</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assign the object state. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd>GetState() </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a88c45841c0cc319524f63b7c7517495c"></a><!-- doxytag: member="vtkToolEndovascular::SetToolType" ref="a88c45841c0cc319524f63b7c7517495c" args="(vtkTool::vtkToolType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkTool::SetToolType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9">vtkTool::vtkToolType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set tool type. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classvtkTool.html#a53b7076f2e76743acdfa326f98f76ad9" title="Tool type definition.">vtkToolType</a> <a class="el" href="classvtkTool.html#ad0bd9c7a0f5ceea99ee2cabf54ad507a" title="Return tool type.">GetToolType()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fc22f49a32fd36ee2a3384c2ab56b7b"></a><!-- doxytag: member="vtkToolEndovascular::Show" ref="a6fc22f49a32fd36ee2a3384c2ab56b7b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Show/Display object. </p>
+<p>Must be implemented in inherited classes Note: this function must be implemented in inheriting classes </p>
+
+</div>
+</div>
+<a class="anchor" id="a55bf89ee29785e329e9a2eea61a3782e"></a><!-- doxytag: member="vtkToolEndovascular::Translate" ref="a55bf89ee29785e329e9a2eea61a3782e" args="(double *vector)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Translate </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements the translation of the object (Local coordinate system) </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">Force</td><td>force vector of components </td></tr>
+    <tr><td class="paramname">vector</td><td>position vector of the translation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac08d29ac06a7f5c05f58c07695c60fc8"></a><!-- doxytag: member="vtkToolEndovascular::Translate" ref="ac08d29ac06a7f5c05f58c07695c60fc8" args="(double x, double y, double z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkScenarioObject::Translate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements the translation of the object (Local coordinate system) </p>
+<p>The X &amp; Y parameters contains the relative movement in the horizontal and vertical axes respectively. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x position of the object </td></tr>
+    <tr><td class="paramname">y</td><td>y position of the object </td></tr>
+    <tr><td class="paramname">z</td><td>z position of the object </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,7 +1138,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <li>Scenario/vtkToolEndovascular.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:35 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

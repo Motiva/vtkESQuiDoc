@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -38,8 +38,10 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">vtkEulerSolver Class Reference</div>  </div>
 </div>
@@ -66,6 +68,10 @@ Collaboration diagram for vtkEulerSolver:</div>
 
 <p><a href="classvtkEulerSolver-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a6894c76250bb5443cae06fc95bf486e4">MotionEquationSolverType</a> </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of solver types. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84a326bbc846b83dca02dedbb84f7aa7"></a><!-- doxytag: member="vtkEulerSolver::vtkTypeRevisionMacro" ref="a84a326bbc846b83dca02dedbb84f7aa7" args="(vtkEulerSolver, vtkMotionEquationSolver)" -->
@@ -79,11 +85,40 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize equation motion solver. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkEulerSolver.html#adc4a372d532efee3ac94dbc5c28b09a1">ComputeNextStep</a> (<a class="el" href="classvtkParticleCollection.html">vtkParticleCollection</a> *particles, double dt)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute next step for every particle.  <a href="#adc4a372d532efee3ac94dbc5c28b09a1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad0ff41d843c47255c24c5e6f93be899"></a><!-- doxytag: member="vtkEulerSolver::vtkTypeRevisionMacro" ref="aad0ff41d843c47255c24c5e6f93be899" args="(vtkMotionEquationSolver, vtkObject)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#aad0ff41d843c47255c24c5e6f93be899">vtkTypeRevisionMacro</a> (<a class="el" href="classvtkMotionEquationSolver.html">vtkMotionEquationSolver</a>, vtkObject)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type revision macro. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22f3638538d251d459701e1c2549ffce"></a><!-- doxytag: member="vtkEulerSolver::SetNumberOfParticles" ref="a22f3638538d251d459701e1c2549ffce" args="(double)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a22f3638538d251d459701e1c2549ffce">SetNumberOfParticles</a> (double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of particles. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9beb1d8f34a885bfc26360be91deb70a"></a><!-- doxytag: member="vtkEulerSolver::SetResidual" ref="a9beb1d8f34a885bfc26360be91deb70a" args="(double)" -->
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a9beb1d8f34a885bfc26360be91deb70a">SetResidual</a> (double)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set residual error. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4530f249cc57713ed654629f650ed75"></a><!-- doxytag: member="vtkEulerSolver::SetDeformationModel" ref="ac4530f249cc57713ed654629f650ed75" args="(vtkParticleSpringSystem *model)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#ac4530f249cc57713ed654629f650ed75">SetDeformationModel</a> (<a class="el" href="classvtkParticleSpringSystem.html">vtkParticleSpringSystem</a> *model)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Deformation model. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50bf05e681d936925794b2ba81547df7"></a><!-- doxytag: member="vtkEulerSolver::New" ref="a50bf05e681d936925794b2ba81547df7" args="()" -->
 static <a class="el" href="classvtkEulerSolver.html">vtkEulerSolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkEulerSolver.html#a50bf05e681d936925794b2ba81547df7">New</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new euler solver. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac73806d77961527fa8275ed48c8bfe43"></a><!-- doxytag: member="vtkEulerSolver::DeformationModel" ref="ac73806d77961527fa8275ed48c8bfe43" args="" -->
+<a class="el" href="classvtkParticleSpringSystem.html">vtkParticleSpringSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#ac73806d77961527fa8275ed48c8bfe43">DeformationModel</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Solver deformation model. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997ac5eb3fbb7b67ef2834a271d4cdd9"></a><!-- doxytag: member="vtkEulerSolver::NumberOfParticles" ref="a997ac5eb3fbb7b67ef2834a271d4cdd9" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a997ac5eb3fbb7b67ef2834a271d4cdd9">NumberOfParticles</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of particles. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a374466c42f0569a1abb54db50d3a9470"></a><!-- doxytag: member="vtkEulerSolver::Residual" ref="a374466c42f0569a1abb54db50d3a9470" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a374466c42f0569a1abb54db50d3a9470">Residual</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Residual Error. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c084cdaf3d799f15d8ba1d0ecbc28e9"></a><!-- doxytag: member="vtkEulerSolver::dv" ref="a9c084cdaf3d799f15d8ba1d0ecbc28e9" args="" -->
+vtkDoubleArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#a9c084cdaf3d799f15d8ba1d0ecbc28e9">dv</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity derivative. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa767529f1d042e639ac1bc1750799142"></a><!-- doxytag: member="vtkEulerSolver::dx" ref="aa767529f1d042e639ac1bc1750799142" args="" -->
+vtkDoubleArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkMotionEquationSolver.html#aa767529f1d042e639ac1bc1750799142">dx</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Position derivative. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Implementation of the semi-implicit Euler solver. </p>
@@ -131,7 +166,7 @@ static <a class="el" href="classvtkEulerSolver.html">vtkEulerSolver</a> *&#160;<
 <li>BioMechanics/vtkParticleSpringSystem/vtkEulerSolver.cxx</li>
 </ul>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -14,7 +14,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5</span></div>
+   <div id="projectname">vtkESQui&#160;<span id="projectnumber">0.5.1</span></div>
   </td>
  </tr>
  </tbody>
@@ -114,67 +114,65 @@
 <a name="l00093"></a>00093 <span class="comment"></span>    vtkSetMacro(DeltaT, <span class="keywordtype">double</span>);                <span class="comment">// dt for every step</span>
 <a name="l00095"></a>00095 <span class="comment"></span>    vtkSetMacro(Mass, <span class="keywordtype">double</span>);                  <span class="comment">// Mass of all points (future work: specify different masses for different &quot;layers&quot;)</span>
 <a name="l00097"></a>00097 <span class="comment"></span>    vtkSetMacro(Residual, <span class="keywordtype">double</span>);                  <span class="comment">// Residual error tolerance on displacement calculus</span>
-<a name="l00099"></a>00099 <span class="comment"></span>    vtkSetMacro(RigidityFactor, vtkIdType);     <span class="comment">// Rigidity Factor -&gt; neighborhood size</span>
-<a name="l00101"></a>00101 <span class="comment"></span>    vtkSetMacro(SolverType, <a class="code" href="classvtkMotionEquationSolver.html#a6894c76250bb5443cae06fc95bf486e4" title="Enumeration of solver types.">vtkMotionEquationSolver::MotionEquationSolverType</a>);     <span class="comment">// Motion equation solver type</span>
-<a name="l00102"></a>00102 
-<a name="l00104"></a>00104     vtkSetVector3Macro(Gravity, <span class="keywordtype">double</span>);
-<a name="l00106"></a>00106     vtkGetVector3Macro(Gravity, <span class="keywordtype">double</span>);
+<a name="l00099"></a>00099 <span class="comment"></span>    vtkSetMacro(SolverType, <a class="code" href="classvtkMotionEquationSolver.html#a6894c76250bb5443cae06fc95bf486e4" title="Enumeration of solver types.">vtkMotionEquationSolver::MotionEquationSolverType</a>);     <span class="comment">// Motion equation solver type</span>
+<a name="l00100"></a>00100 
+<a name="l00102"></a>00102     vtkSetVector3Macro(Gravity, <span class="keywordtype">double</span>);
+<a name="l00104"></a>00104     vtkGetVector3Macro(Gravity, <span class="keywordtype">double</span>);
+<a name="l00105"></a>00105 
 <a name="l00107"></a>00107 
-<a name="l00109"></a>00109 
-<a name="l00113"></a>00113     <span class="keywordtype">void</span> SetParticleStatus(vtkIdType <span class="keywordtype">id</span>, <span class="keywordtype">bool</span> status);
-<a name="l00114"></a>00114 
-<a name="l00116"></a>00116     <span class="keywordtype">void</span> InsertCollision(vtkIdType <span class="keywordtype">id</span>, <span class="keywordtype">double</span> * displacement);
+<a name="l00111"></a>00111     <span class="keywordtype">void</span> SetParticleStatus(vtkIdType <span class="keywordtype">id</span>, <span class="keywordtype">bool</span> status);
+<a name="l00112"></a>00112 
+<a name="l00114"></a>00114     <span class="keywordtype">void</span> InsertCollision(vtkIdType <span class="keywordtype">id</span>, <span class="keywordtype">double</span> * displacement);
+<a name="l00115"></a>00115 
 <a name="l00117"></a>00117 
-<a name="l00119"></a>00119 
-<a name="l00123"></a>00123     <span class="keywordtype">void</span> SetCollisions(vtkIdList * ids, vtkDoubleArray * displacements);
+<a name="l00121"></a>00121     <span class="keywordtype">void</span> SetCollisions(vtkIdList * ids, vtkDoubleArray * displacements);
+<a name="l00122"></a>00122 
 <a name="l00124"></a>00124 
-<a name="l00126"></a>00126 
-<a name="l00129"></a>00129     <span class="keywordtype">void</span> ComputeForces();
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131 <span class="keyword">protected</span>:
-<a name="l00132"></a>00132     <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>();
-<a name="l00133"></a>00133     ~<a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>();
-<a name="l00134"></a>00134 
-<a name="l00136"></a>00136     <span class="keywordtype">int</span> RequestData(vtkInformation *vtkNotUsed(request), vtkInformationVector **inputVector, vtkInformationVector *outputVector);
-<a name="l00137"></a>00137 
-<a name="l00138"></a>00138     <span class="comment">//Particle-Spring System</span>
-<a name="l00140"></a><a class="code" href="classvtkParticleSpringSystem.html#a5e7f6fbe96d95148435c5877d26f1a77">00140</a> <span class="comment"></span>    <a class="code" href="classvtkSpringCollection.html" title="Collection of Springs.">vtkSpringCollection</a> * <a class="code" href="classvtkParticleSpringSystem.html#a5e7f6fbe96d95148435c5877d26f1a77" title="Collection of springs.">Springs</a>;
-<a name="l00142"></a><a class="code" href="classvtkParticleSpringSystem.html#ac8e5bdc3a1529ead05fcb7e0e97422a2">00142</a>     <a class="code" href="classvtkParticleCollection.html" title="Collection of Particles.">vtkParticleCollection</a> * <a class="code" href="classvtkParticleSpringSystem.html#ac8e5bdc3a1529ead05fcb7e0e97422a2" title="Collection of particles.">Particles</a>;
-<a name="l00144"></a><a class="code" href="classvtkParticleSpringSystem.html#aa375ef0577337fcddcb2ec27c232a86c">00144</a>     vtkCellLinks * <a class="code" href="classvtkParticleSpringSystem.html#aa375ef0577337fcddcb2ec27c232a86c" title="Collection of links between particles and springs.">Links</a>;
-<a name="l00145"></a>00145 
-<a name="l00146"></a>00146     <span class="comment">//Model Parameters</span>
-<a name="l00148"></a><a class="code" href="classvtkParticleSpringSystem.html#a74a641eebd0c8a96af6539ca81f1baf8">00148</a> <span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a74a641eebd0c8a96af6539ca81f1baf8" title="Spring stiffness k.">SpringCoefficient</a>;
-<a name="l00150"></a><a class="code" href="classvtkParticleSpringSystem.html#acba79b202edabd556e88755b3814d9bf">00150</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#acba79b202edabd556e88755b3814d9bf" title="Distance coefficient. Maximum Percentage of elongation.">DistanceCoefficient</a>;
-<a name="l00152"></a><a class="code" href="classvtkParticleSpringSystem.html#a6deb571253d0bbedeea8fcb3db156ffb">00152</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a6deb571253d0bbedeea8fcb3db156ffb" title="Damping coefficient.">DampingCoefficient</a>;
-<a name="l00154"></a><a class="code" href="classvtkParticleSpringSystem.html#a979c7c7b6d373d36d7de784e849f7611">00154</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a979c7c7b6d373d36d7de784e849f7611" title="Equation time step.">DeltaT</a>;
-<a name="l00156"></a><a class="code" href="classvtkParticleSpringSystem.html#a9eee2250af8330144e97495d47c407e2">00156</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a9eee2250af8330144e97495d47c407e2" title="Mass for each system particle.">Mass</a>;
-<a name="l00158"></a><a class="code" href="classvtkParticleSpringSystem.html#adbde327d6d997317f754a6415f52988a">00158</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#adbde327d6d997317f754a6415f52988a" title="Residual error tolerance.">Residual</a>;
-<a name="l00160"></a><a class="code" href="classvtkParticleSpringSystem.html#a44940cb9db67b8f259656db65c66875d">00160</a>     vtkIdType <a class="code" href="classvtkParticleSpringSystem.html#a44940cb9db67b8f259656db65c66875d" title="Size of particle neighborhood. The big.">RigidityFactor</a>;
-<a name="l00161"></a>00161 
-<a name="l00163"></a><a class="code" href="classvtkParticleSpringSystem.html#aa2bf62dcd48ed1c751b50713c7f8cdc1">00163</a>     <span class="keywordtype">double</span> Gravity[3];
-<a name="l00164"></a>00164 
-<a name="l00166"></a><a class="code" href="classvtkParticleSpringSystem.html#a4f293176f8ad7251ec659ac3587a3c54">00166</a>     <a class="code" href="classvtkMotionEquationSolver.html" title="Implementation of the abstract motion equation solver.">vtkMotionEquationSolver</a> * <a class="code" href="classvtkParticleSpringSystem.html#a4f293176f8ad7251ec659ac3587a3c54" title="Motion equation solver.">Solver</a>;
-<a name="l00168"></a><a class="code" href="classvtkParticleSpringSystem.html#aa88dcee0b2ee2a41b793f8feb6938c74">00168</a>     <a class="code" href="classvtkMotionEquationSolver.html#a6894c76250bb5443cae06fc95bf486e4" title="Enumeration of solver types.">vtkMotionEquationSolver::MotionEquationSolverType</a> <a class="code" href="classvtkParticleSpringSystem.html#aa88dcee0b2ee2a41b793f8feb6938c74" title="Motion equation solver type.">SolverType</a>;
-<a name="l00169"></a>00169 
-<a name="l00170"></a>00170     <span class="comment">//Contact data</span>
-<a name="l00172"></a><a class="code" href="classvtkParticleSpringSystem.html#a5d5fa30b2ee3ec3eb544fe90878b3581">00172</a> <span class="comment"></span>    vtkIdList * <a class="code" href="classvtkParticleSpringSystem.html#a5d5fa30b2ee3ec3eb544fe90878b3581" title="Contact Point Ids.">CollisionIds</a>;
-<a name="l00174"></a><a class="code" href="classvtkParticleSpringSystem.html#af63bb05645195de677cd1f0513e3554b">00174</a>     vtkDoubleArray * <a class="code" href="classvtkParticleSpringSystem.html#af63bb05645195de677cd1f0513e3554b" title="Contact Point Displacements.">CollisionDisplacements</a>;
+<a name="l00127"></a>00127     <span class="keywordtype">void</span> ComputeForces();
+<a name="l00128"></a>00128 
+<a name="l00129"></a>00129 <span class="keyword">protected</span>:
+<a name="l00130"></a>00130     <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>();
+<a name="l00131"></a>00131     ~<a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>();
+<a name="l00132"></a>00132 
+<a name="l00134"></a>00134     <span class="keywordtype">int</span> RequestData(vtkInformation *vtkNotUsed(request), vtkInformationVector **inputVector, vtkInformationVector *outputVector);
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136     <span class="comment">//Particle-Spring System</span>
+<a name="l00138"></a><a class="code" href="classvtkParticleSpringSystem.html#a5e7f6fbe96d95148435c5877d26f1a77">00138</a> <span class="comment"></span>    <a class="code" href="classvtkSpringCollection.html" title="Collection of Springs.">vtkSpringCollection</a> * <a class="code" href="classvtkParticleSpringSystem.html#a5e7f6fbe96d95148435c5877d26f1a77" title="Collection of springs.">Springs</a>;
+<a name="l00140"></a><a class="code" href="classvtkParticleSpringSystem.html#ac8e5bdc3a1529ead05fcb7e0e97422a2">00140</a>     <a class="code" href="classvtkParticleCollection.html" title="Collection of Particles.">vtkParticleCollection</a> * <a class="code" href="classvtkParticleSpringSystem.html#ac8e5bdc3a1529ead05fcb7e0e97422a2" title="Collection of particles.">Particles</a>;
+<a name="l00142"></a><a class="code" href="classvtkParticleSpringSystem.html#aa375ef0577337fcddcb2ec27c232a86c">00142</a>     vtkCellLinks * <a class="code" href="classvtkParticleSpringSystem.html#aa375ef0577337fcddcb2ec27c232a86c" title="Collection of links between particles and springs.">Links</a>;
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144     <span class="comment">//Model Parameters</span>
+<a name="l00146"></a><a class="code" href="classvtkParticleSpringSystem.html#a74a641eebd0c8a96af6539ca81f1baf8">00146</a> <span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a74a641eebd0c8a96af6539ca81f1baf8" title="Spring stiffness k.">SpringCoefficient</a>;
+<a name="l00148"></a><a class="code" href="classvtkParticleSpringSystem.html#acba79b202edabd556e88755b3814d9bf">00148</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#acba79b202edabd556e88755b3814d9bf" title="Distance coefficient. Maximum Percentage of elongation.">DistanceCoefficient</a>;
+<a name="l00150"></a><a class="code" href="classvtkParticleSpringSystem.html#a6deb571253d0bbedeea8fcb3db156ffb">00150</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a6deb571253d0bbedeea8fcb3db156ffb" title="Damping coefficient.">DampingCoefficient</a>;
+<a name="l00152"></a><a class="code" href="classvtkParticleSpringSystem.html#a979c7c7b6d373d36d7de784e849f7611">00152</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a979c7c7b6d373d36d7de784e849f7611" title="Equation time step.">DeltaT</a>;
+<a name="l00154"></a><a class="code" href="classvtkParticleSpringSystem.html#a9eee2250af8330144e97495d47c407e2">00154</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#a9eee2250af8330144e97495d47c407e2" title="Mass for each system particle.">Mass</a>;
+<a name="l00156"></a><a class="code" href="classvtkParticleSpringSystem.html#adbde327d6d997317f754a6415f52988a">00156</a>     <span class="keywordtype">double</span> <a class="code" href="classvtkParticleSpringSystem.html#adbde327d6d997317f754a6415f52988a" title="Residual error tolerance.">Residual</a>;
+<a name="l00157"></a>00157 
+<a name="l00159"></a><a class="code" href="classvtkParticleSpringSystem.html#aa2bf62dcd48ed1c751b50713c7f8cdc1">00159</a>     <span class="keywordtype">double</span> Gravity[3];
+<a name="l00160"></a>00160 
+<a name="l00162"></a><a class="code" href="classvtkParticleSpringSystem.html#a4f293176f8ad7251ec659ac3587a3c54">00162</a>     <a class="code" href="classvtkMotionEquationSolver.html" title="Implementation of the abstract motion equation solver.">vtkMotionEquationSolver</a> * <a class="code" href="classvtkParticleSpringSystem.html#a4f293176f8ad7251ec659ac3587a3c54" title="Motion equation solver.">Solver</a>;
+<a name="l00164"></a><a class="code" href="classvtkParticleSpringSystem.html#aa88dcee0b2ee2a41b793f8feb6938c74">00164</a>     <a class="code" href="classvtkMotionEquationSolver.html#a6894c76250bb5443cae06fc95bf486e4" title="Enumeration of solver types.">vtkMotionEquationSolver::MotionEquationSolverType</a> <a class="code" href="classvtkParticleSpringSystem.html#aa88dcee0b2ee2a41b793f8feb6938c74" title="Motion equation solver type.">SolverType</a>;
+<a name="l00165"></a>00165 
+<a name="l00166"></a>00166     <span class="comment">//Contact data</span>
+<a name="l00168"></a><a class="code" href="classvtkParticleSpringSystem.html#a5d5fa30b2ee3ec3eb544fe90878b3581">00168</a> <span class="comment"></span>    vtkIdList * <a class="code" href="classvtkParticleSpringSystem.html#a5d5fa30b2ee3ec3eb544fe90878b3581" title="Contact Point Ids.">CollisionIds</a>;
+<a name="l00170"></a><a class="code" href="classvtkParticleSpringSystem.html#af63bb05645195de677cd1f0513e3554b">00170</a>     vtkDoubleArray * <a class="code" href="classvtkParticleSpringSystem.html#af63bb05645195de677cd1f0513e3554b" title="Contact Point Displacements.">CollisionDisplacements</a>;
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 <span class="keyword">private</span>:
+<a name="l00173"></a>00173     <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>(<span class="keyword">const</span> <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>&amp;);            <span class="comment">// Not implemented.</span>
+<a name="l00174"></a>00174     <span class="keywordtype">void</span> operator=(<span class="keyword">const</span> <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>&amp;);           <span class="comment">// Not implemented.</span>
 <a name="l00175"></a>00175 
-<a name="l00176"></a>00176 <span class="keyword">private</span>:
-<a name="l00177"></a>00177     <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>(<span class="keyword">const</span> <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>&amp;);            <span class="comment">// Not implemented.</span>
-<a name="l00178"></a>00178     <span class="keywordtype">void</span> operator=(<span class="keyword">const</span> <a class="code" href="classvtkParticleSpringSystem.html" title="Implementation of the particle-spring deformation model.">vtkParticleSpringSystem</a>&amp;);           <span class="comment">// Not implemented.</span>
-<a name="l00179"></a>00179 
-<a name="l00181"></a>00181     <span class="keywordtype">void</span> CreateSpring(<a class="code" href="classvtkParticle.html" title="Implementation of a system particle.">vtkParticle</a> * p0, <a class="code" href="classvtkParticle.html" title="Implementation of a system particle.">vtkParticle</a> * p1);
-<a name="l00182"></a>00182 
-<a name="l00184"></a>00184     <span class="keywordtype">void</span> ComputeContacts();
-<a name="l00185"></a>00185 
-<a name="l00186"></a>00186 };
-<a name="l00187"></a>00187 
-<a name="l00188"></a>00188 <span class="preprocessor">#endif</span>
-<a name="l00189"></a>00189 <span class="preprocessor"></span>
+<a name="l00177"></a>00177     <span class="keywordtype">void</span> CreateSpring(<a class="code" href="classvtkParticle.html" title="Implementation of a system particle.">vtkParticle</a> * p0, <a class="code" href="classvtkParticle.html" title="Implementation of a system particle.">vtkParticle</a> * p1);
+<a name="l00178"></a>00178 
+<a name="l00180"></a>00180     <span class="keywordtype">void</span> ComputeContacts();
+<a name="l00181"></a>00181 
+<a name="l00182"></a>00182 };
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184 <span class="preprocessor">#endif</span>
+<a name="l00185"></a>00185 <span class="preprocessor"></span>
 </pre></div></div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 5 2011 09:38:34 for vtkESQui by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Aug 31 2011 12:42:48 for vtkESQui by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
