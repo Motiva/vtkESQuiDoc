@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="5,86,155,117"/>
-<area shape="rect" id="node4" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="41,6,119,37"/>
+<area shape="rect" id="node2" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="5,83,152,112"/>
+<area shape="rect" id="node4" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="40,5,117,35"/>
 </map>

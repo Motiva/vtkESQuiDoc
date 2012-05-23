@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node5" href="$classvtkCUDAParticleSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="5,166,221,197"/>
-<area shape="rect" id="node7" href="$classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="245,166,363,197"/>
-<area shape="rect" id="node9" href="$classvtkParticleSpringSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="387,166,603,197"/>
-<area shape="rect" id="node2" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="265,6,343,37"/>
+<area shape="rect" id="node5" href="$classvtkCUDAParticleSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="5,160,219,189"/>
+<area shape="rect" id="node7" href="$classvtkEDMInterface.html" title="Interface class for a explicit deformation system." alt="" coords="243,160,360,189"/>
+<area shape="rect" id="node9" href="$classvtkParticleSpringSystemInterface.html" title="Interface class for a particle&#45;spring deformation system." alt="" coords="384,160,597,189"/>
+<area shape="rect" id="node2" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="263,5,340,35"/>
 </map>

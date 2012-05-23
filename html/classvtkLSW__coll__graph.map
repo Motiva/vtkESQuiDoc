@@ -1,5 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkHaptic.html" title="Generic haptic class for interface implementation." alt="" coords="63,105,137,135"/>
-<area shape="rect" id="node4" href="$classvtkScenarioObjectCollection.html" title="Collection of ScenarioObjects." alt="" coords="5,6,195,37"/>
-<area shape="rect" id="node6" href="$classvtkLSWTool.html" title="Immersion LSW tool interface class." alt="" coords="161,105,255,135"/>
+<area shape="rect" id="node2" href="$classvtkHaptic.html" title="Generic haptic class for interface implementation." alt="" coords="63,101,137,131"/>
+<area shape="rect" id="node4" href="$classvtkScenarioObjectCollection.html" title="Collection of ScenarioObjects." alt="" coords="5,5,195,35"/>
 </map>
