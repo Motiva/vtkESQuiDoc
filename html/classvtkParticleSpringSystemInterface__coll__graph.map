@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="133,197,280,227"/>
-<area shape="rect" id="node4" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="41,101,119,131"/>
-<area shape="rect" id="node6" href="$classvtkSyncPolyDataFilter.html" title="This class represents an abstract model on a scenario element." alt="" coords="5,5,155,35"/>
-<area shape="rect" id="node8" href="$classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="143,101,356,131"/>
+<map id="vtkParticleSpringSystemInterface" name="vtkParticleSpringSystemInterface">
+<area shape="rect" id="node2" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData). " alt="" coords="137,203,297,234"/>
+<area shape="rect" id="node3" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element. " alt="" coords="44,105,124,135"/>
+<area shape="rect" id="node4" href="$classvtkSyncPolyDataFilter.html" title="This class represents an abstract model on a scenario element. " alt="" coords="4,6,163,37"/>
+<area shape="rect" id="node5" href="$classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions. " alt="" coords="148,105,377,135"/>
 </map>

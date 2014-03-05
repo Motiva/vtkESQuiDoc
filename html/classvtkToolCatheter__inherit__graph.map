@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkToolEndovascular.html" title="vtkToolEndovascular class implements a surgical endovascular tool." alt="" coords="5,160,152,189"/>
-<area shape="rect" id="node4" href="$classvtkTool.html" title="Implementation class for scenario tool definition." alt="" coords="45,83,112,112"/>
-<area shape="rect" id="node6" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object." alt="" coords="13,5,144,35"/>
+<map id="vtkToolCatheter" name="vtkToolCatheter">
+<area shape="rect" id="node2" href="$classvtkToolEndovascular.html" title="vtkToolEndovascular class implements a surgical endovascular tool. " alt="" coords="4,166,157,197"/>
+<area shape="rect" id="node3" href="$classvtkTool.html" title="Implementation class for scenario tool definition. " alt="" coords="46,86,116,117"/>
+<area shape="rect" id="node4" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object. " alt="" coords="13,6,149,37"/>
 </map>

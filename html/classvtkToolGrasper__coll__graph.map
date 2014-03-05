@@ -1,15 +1,15 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkToolLaparoscopy.html" title="vtkToolLaparoscopy class implements a surgical laparoscopic tool." alt="" coords="1023,24,1164,53"/>
-<area shape="rect" id="node4" href="$classvtkTool.html" title="Implementation class for scenario tool definition." alt="" coords="747,11,813,40"/>
-<area shape="rect" id="node6" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object." alt="" coords="359,11,489,40"/>
-<area shape="rect" id="node8" href="$classvtkScenarioElementCollection.html" title="Collection of ScenarioElements." alt="" coords="5,5,205,35"/>
-<area shape="rect" id="node10" href="$classvtkCollisionCollection.html" title="Implementation of a collection of collisions." alt="" coords="31,77,180,107"/>
-<area shape="rect" id="node27" href="$classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData)." alt="" coords="716,117,844,147"/>
-<area shape="rect" id="node12" href="$classvtkScenarioElement.html" title="vtkScenarioElement class implements the use of a surgical scenario element" alt="" coords="1024,117,1163,147"/>
-<area shape="rect" id="node14" href="$classvtkModelCollection.html" title="Collection of scenario object models." alt="" coords="712,224,848,253"/>
-<area shape="rect" id="node16" href="$classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData)" alt="" coords="705,64,855,93"/>
-<area shape="rect" id="node18" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element." alt="" coords="385,160,463,189"/>
-<area shape="rect" id="node22" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData)." alt="" coords="707,171,853,200"/>
-<area shape="rect" id="node20" href="$classvtkSyncPolyDataFilter.html" title="This class represents an abstract model on a scenario element." alt="" coords="31,160,180,189"/>
-<area shape="rect" id="node25" href="$classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions." alt="" coords="317,213,531,243"/>
+<map id="vtkToolGrasper" name="vtkToolGrasper">
+<area shape="rect" id="node2" href="$classvtkToolLaparoscopy.html" title="vtkToolLaparoscopy class implements a surgical laparoscopic tool. " alt="" coords="1089,25,1239,56"/>
+<area shape="rect" id="node3" href="$classvtkTool.html" title="Implementation class for scenario tool definition. " alt="" coords="794,11,864,42"/>
+<area shape="rect" id="node4" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object. " alt="" coords="379,11,517,42"/>
+<area shape="rect" id="node5" href="$classvtkScenarioElementCollection.html" title="Collection of ScenarioElements. " alt="" coords="6,6,218,37"/>
+<area shape="rect" id="node6" href="$classvtkCollisionCollection.html" title="Implementation of a collection of collisions. " alt="" coords="31,79,193,110"/>
+<area shape="rect" id="node14" href="$classvtkCollisionModel.html" title="vtkCollisionModel object defines a collision model based on a mesh (vtkPolyData). ..." alt="" coords="761,121,898,152"/>
+<area shape="rect" id="node7" href="$classvtkScenarioElement.html" title="vtkScenarioElement class implements the use of a surgical scenario element " alt="" coords="1090,121,1238,152"/>
+<area shape="rect" id="node8" href="$classvtkModelCollection.html" title="Collection of scenario object models. " alt="" coords="757,230,902,261"/>
+<area shape="rect" id="node9" href="$classvtkVisualizationModel.html" title="vtkVisualizationModel object defines a visualization mesh (vtkPolyData) " alt="" coords="748,66,911,97"/>
+<area shape="rect" id="node10" href="$classvtkModel.html" title="This class represents an abstract model on a scenario element. " alt="" coords="408,163,488,194"/>
+<area shape="rect" id="node12" href="$classvtkDeformationModel.html" title="vtkDeformationModel object defines a deformation model based on a mesh (vtkPolyData). " alt="" coords="749,175,910,206"/>
+<area shape="rect" id="node11" href="$classvtkSyncPolyDataFilter.html" title="This class represents an abstract model on a scenario element. " alt="" coords="32,163,192,194"/>
+<area shape="rect" id="node13" href="$classvtkBoundaryConditionCollection.html" title="Implementation of a collection of conditions. " alt="" coords="333,218,563,249"/>
 </map>

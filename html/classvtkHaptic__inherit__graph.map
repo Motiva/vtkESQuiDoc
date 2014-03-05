@@ -1,5 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classvtkIHP.html" title="vtkIHP class wraps the access to the IHP haptic device." alt="" coords="5,83,64,112"/>
-<area shape="rect" id="node5" href="$classvtkLSW.html" title="vtkLSW class wraps the access to the LSW haptic device." alt="" coords="88,83,155,112"/>
-<area shape="rect" id="node7" href="$classvtkVSP.html" title="vtkVSP class wraps the access to the IHP haptic device." alt="" coords="179,83,243,112"/>
+<map id="vtkHaptic" name="vtkHaptic">
+<area shape="rect" id="node2" href="$classvtkIHP.html" title="vtkIHP class wraps the access to the IHP haptic device. " alt="" coords="5,86,67,117"/>
+<area shape="rect" id="node3" href="$classvtkLSW.html" title="vtkLSW class wraps the access to the LSW haptic device. " alt="" coords="91,86,157,117"/>
+<area shape="rect" id="node4" href="$classvtkSBM.html" title="vtkSBM class wraps the access to the Simball haptic device. " alt="" coords="181,86,248,117"/>
+<area shape="rect" id="node5" href="$classvtkVSP.html" title="vtkVSP class wraps the access to the IHP haptic device. " alt="" coords="272,86,336,117"/>
 </map>

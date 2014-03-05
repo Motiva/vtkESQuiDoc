@@ -1,3 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkScenarioObjectCollection.html" title="Collection of ScenarioObjects." alt="" coords="5,5,195,35"/>
+<map id="vtkHaptic" name="vtkHaptic">
+<area shape="rect" id="node2" href="$classvtkScenarioObjectCollection.html" title="Collection of ScenarioObjects. " alt="" coords="4,270,205,301"/>
+<area shape="rect" id="node3" href="$classvtkToolSingleChannel.html" title="vtkToolSingleChannel class implements a surgical rigid endoscopy tool. " alt="" coords="230,270,391,301"/>
+<area shape="rect" id="node4" href="$classvtkTool.html" title="Implementation class for scenario tool definition. " alt="" coords="276,187,345,218"/>
+<area shape="rect" id="node5" href="$classvtkScenarioObject.html" title="vtkScenarioObject class implements the use of a surgical scenario object. " alt="" coords="242,105,379,135"/>
+<area shape="rect" id="node6" href="$classvtkScenarioElementCollection.html" title="Collection of ScenarioElements. " alt="" coords="99,6,311,37"/>
+<area shape="rect" id="node7" href="$classvtkCollisionCollection.html" title="Implementation of a collection of collisions. " alt="" coords="335,6,496,37"/>
 </map>
